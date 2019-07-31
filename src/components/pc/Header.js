@@ -1,36 +1,31 @@
 import React, { Component } from "react";
-import { Button, Menu, Dropdown, Icon} from "antd"
-import { Icon } from 'antd';
+import { Button, Menu, Dropdown, Icon } from "antd"
 import "@/assets/less/pc/header.less"
 class Header extends Component {
     constructor() {
         super()
         this.state = {
-
+            list: ['公司简介', '加入我们', '媒体报道', '延伸阅读', '帮助']
         }
     }
 
-    
     render() {
         const menu = (
-        <Menu>
-            <Menu.Item>
-                <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
-                    1st menu item
-      </a>
-            </Menu.Item>
-            <Menu.Item>
-                <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
-                    2nd menu item
-      </a>
-            </Menu.Item>
-            <Menu.Item>
-                <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
-                    3rd menu item
-      </a>
-            </Menu.Item>
-        </Menu>
-    )
+            <Menu>
+                {
+                    this.state.list.map((value, key) => {
+                        return (
+                            <Menu.Item key={key}>
+                                <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+                                    {value}
+                                </a>
+                            </Menu.Item>
+                        )
+                    })
+                }
+
+            </Menu>
+        )
         return (
             <div>
                 <div className='nav whiteNav'>
@@ -45,9 +40,11 @@ class Header extends Component {
                                 </a>
                             </li>
                             <li>
-                                <a href="">
-                                    产品 <Icon type="down" style={{ fontSize: '12px' }} />
-                                </a>
+                                <Dropdown overlay={menu} overlayClassName='navOverlay'>
+                                    <a href="">
+                                        关于我们 <Icon type="down" style={{ fontSize: '12px' }} />
+                                    </a>
+                                </Dropdown>
                             </li>
                             <li>
                                 <a href="">
@@ -75,10 +72,10 @@ class Header extends Component {
                                 </a>
                             </li>
                             <li>
-                                <Dropdown overlay={menu}>
-                                <a href="">
-                                    关于我们 <Icon type="down" style={{ fontSize: '12px' }} />
-                                </a>
+                                <Dropdown overlay={menu} overlayClassName='navOverlay'>
+                                    <a href="">
+                                        关于我们 <Icon type="down" style={{ fontSize: '12px' }} />
+                                    </a>
                                 </Dropdown>
                             </li>
                         </ul>
@@ -90,6 +87,7 @@ class Header extends Component {
                         </div>
                     </div>
                 </div>
+
             </div>
         )
     }
