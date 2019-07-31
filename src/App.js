@@ -1,12 +1,26 @@
 import React from 'react'
-import {Button} from 'antd'
-import '@/assets/less/index.less'
+import { MediaQuery } from 'react-responsive'
+import { BrowserRouter as Router,Route } from "react-router-dom"
+import PcContainer from '@/pages/pc/PcContainer/PcContainer.js'
+
 function App() {
   return (
     <div className="App">
-      <Button type="primary">Primary</Button>
-      <div className='red'>
-        是叔叔
+      <div>
+        <MediaQuery query='(min-device-width:1224px)'>
+          <Router>
+            <Route path='/' component={PcContainer}>
+
+            </Route>
+          </Router>
+        </MediaQuery>
+
+        <MediaQuery query='(max-device-width:1224px)'>
+          <Router>
+            {/* <Route path='/' component={MobileApp}/>
+                        <Route path='/details/:uniquekey' component={MobileNewsDetail}/> */}
+          </Router>
+        </MediaQuery>
       </div>
     </div>
   );
