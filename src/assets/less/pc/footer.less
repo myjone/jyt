@@ -1,0 +1,103 @@
+.footer{
+    width:100%;
+    margin: 0 auto;
+    padding: 0 50px;
+    &_contain{
+        width:1200px;
+        margin:0 auto;
+        padding:120px 0 20px 0;
+        display:flex;
+        justify-content:space-between;
+        .foot{
+            .tel{
+                font-size: 30px;
+                color: @titleColor;
+                line-height:30px;
+                margin-bottom: 5px;
+            }
+            .time {
+                font-size: 12px;
+                color: #666;
+                margin-bottom: 24px;
+            }
+            .qr{
+                display:flex;
+                text-align:center;
+                .gzh{
+                    margin-right:23px;
+                }
+                p{
+                    font-size: 12px;
+                    color: #666;
+                line-height: 30px;
+                }
+            }
+        }
+        dl{
+            dt{
+                color: @titleColor;
+                font-size: 16px;
+                margin-bottom: 20px;
+                line-height: 30px;
+            }
+            dd{
+                line-height: 40px;
+                font-size: 14px;
+                a{
+                    color:#999;
+                    &:hover{
+                        color:@primary-color;
+                    }
+                }
+            }
+
+        }
+        &.media-report{
+            a{
+                max-width: 300px;
+                white-space: nowrap;
+                 text-overflow: ellipsis;
+                overflow: hidden;
+            }
+        }
+       
+    }
+    .bottom{
+        width:1200px;
+        margin:0 auto;
+        height: 82px;
+        border-top: 1px solid #D5D5D5;
+       padding: 5px 0;
+       ul{
+        height: 35px;
+        line-height: 35px;
+        margin-bottom:0;
+        li{
+            float: left;
+            font-size: 14px;
+             color: #999;
+             margin-right: 40px;
+        }
+       }
+       .copyright{
+        height: 35px;
+        line-height: 35px;
+        .copyright-info {
+            float: left;
+            font-size: 12px;
+             color: #999;
+             
+        }
+        a{
+            float: right;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            align-items: center;
+            color: #999;
+            margin-left: 20px;
+            font-size:12px;
+         }
+       }
+    }
+}

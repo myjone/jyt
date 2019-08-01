@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import Header from "@/components/pc/Header.js"
+import Footer from "@/components/pc/Footer"
 import { Route } from "react-router-dom"
 import Home from "@/pages/pc/Home.js"
 import About from "@/pages/pc/About.js"
@@ -16,9 +17,10 @@ class PcContainer extends Component {
             <div>
                 <Header/>
                 <div className="container">
-                    <Route path='/home' exact component={Home} />
+                    <Route path='/' exact component={Home} />
                     <Route path='/about' component={About} />
                 </div>
+                <Footer/>
             </div>
         )
     }
