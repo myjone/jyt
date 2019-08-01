@@ -148,12 +148,12 @@ class Footer extends Component {
                         <li className='address'>公司地址：深圳市南山区科兴科学园A2栋1205</li>
                     </ul>
                     <div className='copyright'>
-                        <p class="copyright-info">Copyright © 2015-2019 深圳小鹅网络技术有限公司 All Rights Reserved. 粤ICP备15020529号 </p>
+                        <p className="copyright-info">Copyright © 2015-2019 深圳小鹅网络技术有限公司 All Rights Reserved. 粤ICP备15020529号 </p>
                         <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502002037">
-                <img class="webInfo-ga-icon" src="/images/common/beian.png" data-no-retina=""/>粤公网安备 44030502002037号
+                <img className="webInfo-ga-icon" src="/images/common/beian.png" data-no-retina=""/>粤公网安备 44030502002037号
             </a>
             <a target="_blank" href="https://szcert.ebs.org.cn/56b1d5d4-ecc1-4dc9-9478-063925f9c322">
-                <img class="webInfo-ga-icon" src="/images/common/ebsIcon.png" data-no-retina="" />工商网监 电子标识
+                <img className="webInfo-ga-icon" src="/images/common/ebsIcon.png" data-no-retina="" />工商网监 电子标识
             </a>
                     </div>
                 </div>

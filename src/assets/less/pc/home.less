@@ -41,15 +41,15 @@
   &>button{
     width:2px;
     height:10px;
-    border-radius:3px;
-    background:@primary-color;
-    opacity:0.6;
+    border-radius:2px;
+    background:#000;
+    opacity:0.2;
   }
   &.slick-active{
     &>button{
-      width:3px;
+      width:2px;
       height:16px;
-      border-radius:3px;
+      border-radius:2px;
       background:@primary-color;
       opacity:1;
       position: relative;
@@ -57,4 +57,81 @@
     }
   }
   
+}
+
+.w1200{
+  width:1200px;
+  min-height:800px;
+  margin:0 auto;
+  .advantages{
+    width:100%;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    background:#fff;
+    text-align:center;
+    .image{
+      width:56px;
+      height:56px;
+      background:@placeholderColor;
+      margin:0 auto;
+    }
+    p{
+      margin-bottom:0;
+    }
+    .title{
+      font-size: 22px;
+      color: @titleColor;
+      line-height: 40px;
+      margin-top: 20px;
+    }
+    .content{
+      font-size: 16px;
+      color: #666;
+    }
+  }
+  .product-items{
+    width:100%;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    height: 660px;
+    .title{
+       font-size: 32px;
+       color:@titleColor;
+       margin-bottom: 60px;
+       text-align: center;
+    }
+    .product-item{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        .image{
+          width:50%;
+          height:460px;
+          background:@linerBackground;
+        }
+        .product-info{
+          width:50%;
+          &.wcard-left{
+            padding-left:73px;
+          }
+         li{
+            margin-bottom:30px;
+            .item-title{
+             color:@titleColor;
+             font-size: 18px;
+             line-height: 30px;
+          }
+          .item-sub{
+             color:@titleColor;
+             font-size: 16px;
+             line-height: 30px;
+          }
+          
+         }
+
+          
+        }
+    }
+  }
 }
