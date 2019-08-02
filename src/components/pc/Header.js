@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Menu, Dropdown, Icon } from "antd"
+import { NavLink } from "react-router-dom"
 import "@/assets/less/pc/header.less"
 class Header extends Component {
     constructor() {
@@ -35,48 +36,46 @@ class Header extends Component {
                         </div>
                         <ul className="nav_Content_navbar">
                             <li>
-                                <a href="" className='active'>
-                                    首页
-                                </a>
+                                <NavLink to="/" activeClassName={'active'}>首页</NavLink>
+                                {/* <a href="" className='active'>
+                                   
+                                </a> */}
                             </li>
                             <li>
-                                <Dropdown overlay={menu} overlayClassName='navOverlay'>
+                                {/* <Dropdown overlay={menu} overlayClassName='navOverlay'>
                                     <a href="">
                                         关于我们 <Icon type="down" style={{ fontSize: '12px' }} />
                                     </a>
-                                </Dropdown>
+                                </Dropdown> */}
+                                <NavLink to="/product" activeClassName={'active'}>产品介绍</NavLink>
+
                             </li>
                             <li>
-                                <a href="">
+                                <NavLink to="/price" activeClassName={'active'}>定价</NavLink>
+                                {/* <a href="">
                                     定价
-                                </a>
+                                </a> */}
                             </li>
                             <li>
-                                <a href="">
+                                <NavLink to="/example" activeClassName={'active'}>案例</NavLink>
+                                {/* <a href="">
                                     案例
-                                </a>
+                                </a> */}
                             </li>
                             <li>
-                                <a href="">
-                                    内容分销
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    商城学院
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
+                                <NavLink to="/channel" activeClassName={'active'}>渠道合作</NavLink>
+
+                                {/* <a href="">
                                     渠道合作
-                                </a>
+                                </a> */}
                             </li>
                             <li>
-                                <Dropdown overlay={menu} overlayClassName='navOverlay'>
+                                {/* <Dropdown overlay={menu} overlayClassName='navOverlay'>
                                     <a href="">
                                         关于我们 <Icon type="down" style={{ fontSize: '12px' }} />
                                     </a>
-                                </Dropdown>
+                                </Dropdown> */}
+                                <NavLink to="/about" activeClassName={'active'}>关于我们</NavLink>
                             </li>
                         </ul>
                         <div className="nav_Content_btnGroup">

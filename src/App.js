@@ -1,21 +1,17 @@
 import React from 'react'
 import { MediaQuery } from 'react-responsive'
-import { BrowserRouter as Router,Route,Switch } from "react-router-dom"
-import PcContainer from '@/pages/pc/PcContainer/PcContainer.js'
-import Notfound from '@/pages/pc/error/NotFound'
-
+import { renderRoutes } from 'react-router-config'
+import { BrowserRouter as Router, Switch } from "react-router-dom"
+import routes from "@/router/router.js"
 function App() {
   return (
     <div className="App">
       <div>
         <MediaQuery query='(min-device-width:1224px)'>
           <Router>
-        <Switch>
-        <Route  path='/' exact component={PcContainer}>
-            
-         </Route>
-        <Route component={Notfound} />
-        </Switch>
+              <Switch>
+                {renderRoutes(routes)}
+              </Switch>
         </Router>
         </MediaQuery>
         <MediaQuery query='(max-device-width:1224px)'>

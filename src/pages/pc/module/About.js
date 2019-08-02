@@ -4,7 +4,9 @@ class About extends Component {
     render() { 
         return (  
             <div>
-                关于我们
+               <div className='w1200'>
+                   <h1>公司简介</h1>
+               </div>
             </div>
         );
     }
