@@ -18,7 +18,7 @@ class PcContainer extends Component {
                 <Header/>
                 <div className="container">
                     <Route path='/' exact component={Home} />
-                    <Route path='/about' component={About} />
+                    <Route path='/about'  component={About} />
                 </div>
                 <Footer/>
             </div>

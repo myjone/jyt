@@ -1,8 +1,8 @@
 import React from 'react'
 import { MediaQuery } from 'react-responsive'
-import { BrowserRouter as Router,Route } from "react-router-dom"
+import { BrowserRouter as Router,Route,Switch } from "react-router-dom"
 import PcContainer from '@/pages/pc/PcContainer/PcContainer.js'
-
+import Notfound from '@/pages/pc/error/NotFound'
 
 function App() {
   return (
@@ -10,10 +10,13 @@ function App() {
       <div>
         <MediaQuery query='(min-device-width:1224px)'>
           <Router>
-            <Route  path='/' component={PcContainer}>
+        <Switch>
+        <Route  path='/' exact component={PcContainer}>
             
-            </Route>
-          </Router>
+         </Route>
+        <Route component={Notfound} />
+        </Switch>
+        </Router>
         </MediaQuery>
         <MediaQuery query='(max-device-width:1224px)'>
           <Router>
