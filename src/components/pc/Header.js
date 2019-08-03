@@ -41,27 +41,27 @@ class Header extends Component {
                                    
                                 </a> */}
                             </li>
-                            <li>
-                                {/* <Dropdown overlay={menu} overlayClassName='navOverlay'>
+                            {/* <li>
+                                <Dropdown overlay={menu} overlayClassName='navOverlay'>
                                     <a href="">
                                         关于我们 <Icon type="down" style={{ fontSize: '12px' }} />
                                     </a>
-                                </Dropdown> */}
+                                </Dropdown>
                                 <NavLink to="/product" activeClassName={'active'}>产品介绍</NavLink>
 
-                            </li>
+                            </li> */}
                             <li>
                                 <NavLink to="/price" activeClassName={'active'}>定价</NavLink>
                                 {/* <a href="">
                                     定价
                                 </a> */}
                             </li>
-                            <li>
+                            {/* <li>
                                 <NavLink to="/example" activeClassName={'active'}>案例</NavLink>
-                                {/* <a href="">
+                                <a href="">
                                     案例
-                                </a> */}
-                            </li>
+                                </a>
+                            </li> */}
                             <li>
                                 <NavLink to="/channel" activeClassName={'active'}>渠道合作</NavLink>
 

@@ -6,7 +6,7 @@ class About extends Component {
     render() { 
         return (  
             <div>
-               <div className='w1200 about'>
+               <div className='w1200 about pdt80'>
                    <h1 className='fullH1'>公司简介</h1>
                    <p className='about-content'>
                    小鹅通是专注新教育的技术服务商，业务矩阵包含SaaS服务、流量服务、生态服务三大服务模式，从工具、流量、人才等多方面为教育机构及内容从业者赋能，并提供集营销获客、效率提升、商业变现为闭环的一整套互联网解决方案。

@@ -13,7 +13,7 @@ const routes = [
         name: 'Login',
         component: Login
     },
-    {   path:'/',
+    {
         name: 'Home',
         component: PcContainer,
         routes: [
@@ -21,35 +21,35 @@ const routes = [
                 path: "/",
                 name: 'Home',
                 component: Home,
-                exact:true,
+                exact: true,
             },
             {
                 path: "/about",
                 name: 'About',
                 component: About,
                 exact: true,
-                
+
             }, {
                 path: '/example',
                 name: 'Example',
                 component: Example,
                 exact: true,
-            },{
-                path:'/price',
+            }, {
+                path: '/price',
                 name: 'Price',
                 component: Price,
                 exact: true,
-            },{
-                path:'/channel',
-                name:'Channel',
+            }, {
+                path: '/channel',
+                name: 'Channel',
                 component: Channel,
                 exact: true,
-            },{
+            }, {
                 path: '/product',
                 name: 'Product',
                 component: Product,
                 exact: true,
-            }
+            },
         ]
     },
     {

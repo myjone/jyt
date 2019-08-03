@@ -6,6 +6,10 @@ import weibo from "@/assets/images/icon/weibo.png"
 import douyin from "@/assets/images/icon/douyin.png"
 import runwen from "@/assets/images/icon/runwen.png"
 import Commanbar from '@/components/pc/CommanBar';
+import ruanwen from "@/assets/images/icon/ruanwen.png"
+import dingzhi from "@/assets/images/icon/dingzhi.png"
+import shangcheng from "@/assets/images/icon/shangcheng.png"
+import xianshangxianxia from "@/assets/images/icon/xianshangxianxia.png"
 import { Row, Col } from "antd"
 class Home extends Component {
     constructor() {
@@ -82,367 +86,433 @@ class Home extends Component {
                         }
 
                     </ul>
-                    <div className='product-items'>
-                        <h1 className='title'>
+                </div>
+                <div className='w1200 pdt80 pdb30'>
+                    <h1 className='textFontSize32 textCenter mgb50'>
+                        易聚推 全行业全场景的电商解决方案
+                        </h1>
+                    <Row>
+                        <Col lg={{ span: 12 }} xs={{ span: 12 }}>
+                            <div className="himage">
+
+                            </div>
+                        </Col>
+                        <Col lg={{ span: 12 }} xs={{ span: 12 }}>
+                            <ul className='pdl73'>
+                                <li className='textLeft textLineHeight30 textColor333 mgb30'>
+                                    <h2 className='textFontSize18'> 3分钟搭建移动商城</h2>
+                                    <p className='textFontSize16'>深挖行业特点 匹配产品功能，提供全行业解决方案</p>
+                                </li>
+                                <li className='textLineHeight30 textLeft textColor333 mgb30'>
+                                    <h2 className='textFontSize18'> 近百种营销工具</h2>
+                                    <p className='textFontSize16'>社群营销&节日营销，拉新、转化、复购面面俱到</p>
+                                </li>
+                                <li className='textleft textLineHeight30 textColor333 mgb30'>
+                                    <h2 className='textFontSize18'>
+                                        系统化管理客户</h2>
+                                    <p className='textFontSize16'>客户画像帮您了解客户，会员卡/储值卡实现精准营销</p>
+                                </li>
+                                <li className='textleft textLineHeight30 textColor333 mgb30'>
+                                    <h2 className='textFontSize18'>
+                                        系统化管理客户</h2>
+                                    <p className='textFontSize16'>客户画像帮您了解客户，会员卡/储值卡实现精准营销</p>
+                                </li>
+                                <li className='btnInlineGroup'>
+                                    <Button type="primary" className='bigLarge'>
+                                        免费试用
+                                         </Button>
+                                    <Button type="primary" ghost type="primary" className='bigLarge'>
+                                        了解更多
+                                        </Button>
+                                </li>
+                            </ul>
+                        </Col>
+                    </Row>
+                </div>
+
+                <div className='wFull bgF7FBFF pdt80 pdb30'>
+                    <div className='w1200'>
+                        <h1 className='textFontSize32 textCenter mgb50 textColor333'>
                             易聚推 全行业全场景的电商解决方案
                         </h1>
-                        <div className='product-item'>
-                            <div className="image">
-
-                            </div>
-                            <div className="product-info wcard-right">
-                                <ul>
-                                    <li>
-                                        <h2 className='item-title'> 3分钟搭建移动商城</h2>
-                                        <h2 className='item-sub'>深挖行业特点 匹配产品功能，提供全行业解决方案</h2>
-                                    </li>
-                                    <li>
-                                        <h2 className='item-title'> 近百种营销工具</h2>
-                                        <h2 className='item-sub'>社群营销&节日营销，拉新、转化、复购面面俱到</h2>
-                                    </li>
-                                    <li>
-                                        <h2 className='item-title'>
-                                            系统化管理客户</h2>
-                                        <h2 className='item-sub'>客户画像帮您了解客户，会员卡/储值卡实现精准营销</h2>
-                                    </li>
-                                    <li>
-                                        <h2 className='item-title'> 分销拓展销售渠道</h2>
-                                        <h2 className='item-sub'>
-                                            客户帮你卖，员工帮你卖，300万商家帮你卖</h2>
-                                    </li>
-                                    <li className='btnInlineGroup'>
-                                        <Button type="primary" className='bigLarge'>
-                                            免费试用
-                                         </Button>
-                                        <Button type="primary" ghost type="primary" className='bigLarge'>
-                                            了解更多
-                                        </Button>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='wFull bgF7FBFF'>
-                    <div className='product-items'>
-                        <h1 className='title'>
-                            易聚推 一分钟让您拥有自己的店铺
-                        </h1>
-                        <div className='product-item'>
-                            <div className="product-info wcard-left">
-                                <ul>
-                                    <li>
-                                        <h2 className='item-title'> 3分钟搭建移动商城</h2>
-                                        <h2 className='item-sub'>深挖行业特点 匹配产品功能，提供全行业解决方案</h2>
-                                    </li>
-                                    <li>
-                                        <h2 className='item-title'> 近百种营销工具</h2>
-                                        <h2 className='item-sub'>社群营销&节日营销，拉新、转化、复购面面俱到</h2>
-                                    </li>
-                                    <li>
-                                        <h2 className='item-title'>
-                                            系统化管理客户</h2>
-                                        <h2 className='item-sub'>客户画像帮您了解客户，会员卡/储值卡实现精准营销</h2>
-                                    </li>
-                                    <li>
-                                        <h2 className='item-title'> 分销拓展销售渠道</h2>
-                                        <h2 className='item-sub'>
-                                            客户帮你卖，员工帮你卖，300万商家帮你卖</h2>
-                                    </li>
-                                    <li className='btnInlineGroup'>
-                                        <Button type="primary" className='bigLarge'>
-                                            免费试用
-                                         </Button>
-                                        <Button type="primary" ghost type="primary" className='bigLarge'>
-                                            了解更多
-                                        </Button>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="image">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className='w1200'>
-                    <div className='product-items'>
-                        <h1 className='title'>
-                            易聚推 一分钟让您拥有自己的店铺
-                        </h1>
-                        <div className='product-item'>
-                            <div className="image">
-
-                            </div>
-                            <div className="product-info wcard-right">
-                                <ul>
-                                    <li>
-                                        <h2 className='item-title'> 3分钟搭建移动商城</h2>
-                                        <h2 className='item-sub'>深挖行业特点 匹配产品功能，提供全行业解决方案</h2>
-                                    </li>
-                                    <li>
-                                        <h2 className='item-title'> 近百种营销工具</h2>
-                                        <h2 className='item-sub'>社群营销&节日营销，拉新、转化、复购面面俱到</h2>
-                                    </li>
-                                    <li>
-                                        <h2 className='item-title'>
-                                            系统化管理客户</h2>
-                                        <h2 className='item-sub'>客户画像帮您了解客户，会员卡/储值卡实现精准营销</h2>
-                                    </li>
-                                    <li>
-                                        <h2 className='item-title'> 分销拓展销售渠道</h2>
-                                        <h2 className='item-sub'>
-                                            客户帮你卖，员工帮你卖，300万商家帮你卖</h2>
-                                    </li>
-                                    <li className='btnInlineGroup'>
-                                        <Button type="primary" className='bigLarge'>
-                                            免费试用
-                                         </Button>
-                                        <Button type="primary" ghost type="primary" className='bigLarge'>
-                                            了解更多
-                                        </Button>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div className='wFull bgF7FBFF'>
-                    <div className='product-items'>
-                        <h1 className='title'>
-                            易聚推 一分钟让您拥有自己的店铺
-                        </h1>
-                        <div className='product-item'>
-                            <div className="product-info wcard-left">
-                                <ul>
-                                    <li>
-                                        <h2 className='item-title'> 3分钟搭建移动商城</h2>
-                                        <h2 className='item-sub'>深挖行业特点 匹配产品功能，提供全行业解决方案</h2>
-                                    </li>
-                                    <li>
-                                        <h2 className='item-title'> 近百种营销工具</h2>
-                                        <h2 className='item-sub'>社群营销&节日营销，拉新、转化、复购面面俱到</h2>
-                                    </li>
-                                    <li>
-                                        <h2 className='item-title'>
-                                            系统化管理客户</h2>
-                                        <h2 className='item-sub'>客户画像帮您了解客户，会员卡/储值卡实现精准营销</h2>
-                                    </li>
-                                    <li>
-                                        <h2 className='item-title'> 分销拓展销售渠道</h2>
-                                        <h2 className='item-sub'>
-                                            客户帮你卖，员工帮你卖，300万商家帮你卖</h2>
-                                    </li>
-                                    <li className='btnInlineGroup'>
-                                        <Button type="primary" className='bigLarge'>
-                                            免费试用
-                                         </Button>
-                                        <Button type="primary" ghost type="primary" className='bigLarge'>
-                                            了解更多
-                                        </Button>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div className="image">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className='w1200'>
-                    <div className='product-items'>
-                        <h1 className='title'>
-                            为更多行业和场景提供解决方案
-                        </h1>
-                        <div className='product-item'>
-                            <ul className='flex-wrap'>
-                                <li className='solution-item'>
-                                    <div className="img">
-
-                                    </div>
-                                    <div className='solution-info'>
-                                        <div className='sICON'>
-                                            <Icon type="caret-up" />
-                                        </div>
-                                        <p className="stitle">标题标题标题标题</p>
-                                        <p className='scontent'>
-                                            文字的内容文字的内容文字的内容
-                                             文字的内容文字的内容文字的内容
-                                              文字的内容文字的内容文字的内容
-                                               文字的内容文字的内容文字的内容
-                                                文字的内容文字的内容文字的内容
-                                                 文字的内容文字的内容文字的内容
-                                                  文字的内容文字的内容文字的内容
-                                        </p>
-                                    </div>
-                                </li>
-                                <li className='solution-item'>
-                                    <div className="img">
-
-                                    </div>
-                                    <div className='solution-info'>
-                                        <div className='sICON'>
-                                            <Icon type="caret-up" />
-                                        </div>
-                                        <p className="stitle">标题标题标题标题</p>
-                                        <p className='scontent'>
-                                            文字的内容文字的内容文字的内容
-                                             文字的内容文字的内容文字的内容
-                                              文字的内容文字的内容文字的内容
-                                               文字的内容文字的内容文字的内容
-                                                文字的内容文字的内容文字的内容
-                                                 文字的内容文字的内容文字的内容
-                                                  文字的内容文字的内容文字的内容
-                                        </p>
-                                    </div>
-                                </li>
-                                <li className='solution-item'>
-                                    <div className="img">
-
-                                    </div>
-                                    <div className='solution-info'>
-                                        <div className='sICON'>
-                                            <Icon type="caret-up" />
-                                        </div>
-                                        <p className="stitle">标题标题标题标题</p>
-                                        <p className='scontent'>
-                                            文字的内容文字的内容文字的内容
-                                             文字的内容文字的内容文字的内容
-                                              文字的内容文字的内容文字的内容
-                                               文字的内容文字的内容文字的内容
-                                                文字的内容文字的内容文字的内容
-                                                 文字的内容文字的内容文字的内容
-                                                  文字的内容文字的内容文字的内容
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div className='w1200'>
-                    <div className='product-items'>
-                        <h1 className='title'>
-                            多渠道推广  流量变现快速高效
-                        </h1>
-                        <div className='product-item'>
-                            <ul className='flex-wrap'>
-                                <li className='multi-item'>
-                                    <div className="mask">
-                                        <div className="img">
-                                            <img src={weixin} alt="" style={{ width: '100%' }} />
-                                        </div>
-                                        <h3>微信</h3>
-                                        <p>可在自有公众号中创建知识店铺</p>
-                                        <p>充分挖掘微信社交裂变传播势能</p>
-                                    </div>
-                                </li>
-                                <li className='multi-item'>
-                                    <div className="mask">
-                                        <div className="img">
-                                            <img src={weibo} alt="" style={{ width: '100%' }} />
-                                        </div>
-                                        <h3>微博</h3>
-                                        <p>可在自有公众号中创建知识店铺</p>
-                                        <p>充分挖掘微信社交裂变传播势能</p>
-                                    </div>
-                                </li>
-                                <li className='multi-item'>
-                                    <div className="mask">
-                                        <div className="img">
-                                            <img src={douyin} alt="" style={{ width: '100%' }} />
-                                        </div>
-                                        <h3>抖音</h3>
-                                        <p>可在自有公众号中创建知识店铺</p>
-                                        <p>充分挖掘微信社交裂变传播势能</p>
-                                    </div>
-                                </li>
-                                <li className='multi-item'>
-                                    <div className="mask">
-                                        <div className="img">
-                                            <img src={runwen} alt="" style={{ width: '100%' }} />
-                                        </div>
-                                        <h3>软文</h3>
-                                        <p>可在自有公众号中创建知识店铺</p>
-                                        <p>充分挖掘微信社交裂变传播势能</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div className='w1200'>
-                    <div className='product-items'>
-                        <h1 className='title'>
-                            他们也在使用<span className="textColorPrimary">易聚推</span>
-                        </h1>
                         <Row>
-                        <Col lg={{ span: 8 }} xs={{span:8}}>
-                            <div className='box boxShowdow hoverBoxScale'>
-                                <div className='mask homeMask p20'>
-                                    <div className="img mgb18">
+                            <Col lg={{ span: 12 }} xs={{ span: 12 }}>
+                                <ul>
+                                    <li className='textLeft textLineHeight30 textColor333 mgb30'>
+                                        <h2 className='textFontSize18'> 3分钟搭建移动商城</h2>
+                                        <p className='textFontSize16'>深挖行业特点 匹配产品功能，提供全行业解决方案</p>
+                                    </li>
+                                    <li className='textLineHeight30 textLeft textColor333 mgb30'>
+                                        <h2 className='textFontSize18'> 近百种营销工具</h2>
+                                        <p className='textFontSize16'>社群营销&节日营销，拉新、转化、复购面面俱到</p>
+                                    </li>
+                                    <li className='textleft textLineHeight30 textColor333 mgb30'>
+                                        <h2 className='textFontSize18'>
+                                            系统化管理客户</h2>
+                                        <p className='textFontSize16'>客户画像帮您了解客户，会员卡/储值卡实现精准营销</p>
+                                    </li>
+                                    <li className='textleft textLineHeight30 textColor333 mgb30'>
+                                        <h2 className='textFontSize18'>
+                                            系统化管理客户</h2>
+                                        <p className='textFontSize16'>客户画像帮您了解客户，会员卡/储值卡实现精准营销</p>
+                                    </li>
+                                    <li className='btnInlineGroup'>
+                                        <Button type="primary" className='bigLarge'>
+                                            免费试用
+                                         </Button>
+                                        <Button type="primary" ghost type="primary" className='bigLarge'>
+                                            了解更多
+                                        </Button>
+                                    </li>
+                                </ul>
+                            </Col>
+                            <Col lg={{ span: 12 }} xs={{ span: 12 }}>
+                                <div className="himage">
 
-                                    </div>
-                                    <p className="textCenter colorWhite">
-                                        "这个是标题" 某一个酒家
-                                    </p>
-                                    <p className='textCnter colorWhite'>
-                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
-                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
-                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
-                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
-                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
-                                    </p>
                                 </div>
-                            </div>
-                               </Col>
-                               <Col lg={{ span: 8 }} xs={{span:8}}>
-                            <div className='box boxShowdow hoverBoxScale'>
-                                <div className='mask homeMask p20'>
-                                    <div className="img mgb18">
-
-                                    </div>
-                                    <p className="textCenter colorWhite">
-                                        "这个是标题" 某一个酒家
-                                    </p>
-                                    <p className='textCnter colorWhite'>
-                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
-                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
-                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
-                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
-                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
-                                    </p>
-                                </div>
-                               
-                            </div>
-                               </Col>
-                               <Col lg={{ span: 8 }} xs={{span:8}}>
-                               <div className='box boxShowdow hoverBoxScale'>
-                                <div className='mask homeMask p20'>
-                                    <div className="img mgb18">
-
-                                    </div>
-                                    <p className="textCenter colorWhite">
-                                        "这个是标题" 某一个酒家
-                                    </p>
-                                    <p className='textCnter colorWhite'>
-                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
-                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
-                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
-                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
-                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
-                                    </p>
-                                </div>
-                            </div>
-                               <p className='homeUsers textFontSize16 textLeft textColor666' >
-                                     双11活动大促期间，每日新增会员数超过<span className='textColorPrimary'>999</span>
-                                </p>
-                               </Col>
+                            </Col>
                         </Row>
                     </div>
+                </div>
+
+                <div className='w1200 pdt80 pdb30'>
+                    <h1 className='textFontSize32 textCenter mgb50'>
+                        易聚推 全行业全场景的电商解决方案
+                        </h1>
+                    <Row>
+                        <Col lg={{ span: 12 }} xs={{ span: 12 }}>
+                            <div className="himage">
+
+                            </div>
+                        </Col>
+                        <Col lg={{ span: 12 }} xs={{ span: 12 }}>
+                            <ul className='pdl73'>
+                                <li className='textLeft textLineHeight30 textColor333 mgb30'>
+                                    <h2 className='textFontSize18'> 3分钟搭建移动商城</h2>
+                                    <p className='textFontSize16'>深挖行业特点 匹配产品功能，提供全行业解决方案</p>
+                                </li>
+                                <li className='textLineHeight30 textLeft textColor333 mgb30'>
+                                    <h2 className='textFontSize18'> 近百种营销工具</h2>
+                                    <p className='textFontSize16'>社群营销&节日营销，拉新、转化、复购面面俱到</p>
+                                </li>
+                                <li className='textleft textLineHeight30 textColor333 mgb30'>
+                                    <h2 className='textFontSize18'>
+                                        系统化管理客户</h2>
+                                    <p className='textFontSize16'>客户画像帮您了解客户，会员卡/储值卡实现精准营销</p>
+                                </li>
+                                <li className='textleft textLineHeight30 textColor333 mgb30'>
+                                    <h2 className='textFontSize18'>
+                                        系统化管理客户</h2>
+                                    <p className='textFontSize16'>客户画像帮您了解客户，会员卡/储值卡实现精准营销</p>
+                                </li>
+                                <li className='btnInlineGroup'>
+                                    <Button type="primary" className='bigLarge'>
+                                        免费试用
+                                         </Button>
+                                    <Button type="primary" ghost type="primary" className='bigLarge'>
+                                        了解更多
+                                        </Button>
+                                </li>
+                            </ul>
+                        </Col>
+                    </Row>
+                </div>
+                <div className='wFull bgF7FBFF pdt80 pdb30'>
+                    <div className='w1200'>
+                        <h1 className='textFontSize32 textCenter mgb50 textColor333'>
+                            易聚推 全行业全场景的电商解决方案
+                        </h1>
+                        <Row>
+                            <Col lg={{ span: 12 }} xs={{ span: 12 }}>
+                                <ul>
+                                    <li className='textLeft textLineHeight30 textColor333 mgb30'>
+                                        <h2 className='textFontSize18'> 3分钟搭建移动商城</h2>
+                                        <p className='textFontSize16'>深挖行业特点 匹配产品功能，提供全行业解决方案</p>
+                                    </li>
+                                    <li className='textLineHeight30 textLeft textColor333 mgb30'>
+                                        <h2 className='textFontSize18'> 近百种营销工具</h2>
+                                        <p className='textFontSize16'>社群营销&节日营销，拉新、转化、复购面面俱到</p>
+                                    </li>
+                                    <li className='textleft textLineHeight30 textColor333 mgb30'>
+                                        <h2 className='textFontSize18'>
+                                            系统化管理客户</h2>
+                                        <p className='textFontSize16'>客户画像帮您了解客户，会员卡/储值卡实现精准营销</p>
+                                    </li>
+                                    <li className='textleft textLineHeight30 textColor333 mgb30'>
+                                        <h2 className='textFontSize18'>
+                                            系统化管理客户</h2>
+                                        <p className='textFontSize16'>客户画像帮您了解客户，会员卡/储值卡实现精准营销</p>
+                                    </li>
+                                    <li className='btnInlineGroup'>
+                                        <Button type="primary" className='bigLarge'>
+                                            免费试用
+                                         </Button>
+                                        <Button type="primary" ghost type="primary" className='bigLarge'>
+                                            了解更多
+                                        </Button>
+                                    </li>
+                                </ul>
+                            </Col>
+                            <Col lg={{ span: 12 }} xs={{ span: 12 }}>
+                                <div className="himage">
+
+                                </div>
+                            </Col>
+                        </Row>
+                    </div>
+                </div>
+                <div className='w1200 pdt80'>
+                    <h1 className='textFontSize32 textCenter mgb50 textColor333'>
+                        易聚推 全行业全场景的电商解决方案
+                        </h1>
+
+                    <Row>
+                        <Col span={8}>
+                            <div className='specilItem3 mga boxShowdow radius5 hoverBoxScale'>
+                                <div className="img">
+
+                                </div>
+                                <div className='pd20 pRealtive textCenter'>
+                                    <div className='pAbsolute colorWhite textFontSize30 sICON'>
+                                        <Icon type="caret-up" />
+                                    </div>
+                                    <p className="textFontSize16 textColor333">标题标题标题标题</p>
+                                    <p className='textFontSize14 textColor666 textLineHeight30'>
+                                        文字的内容文字的内容文字的内容
+                                         文字的内容文字的内容文字的内容
+                                          文字的内容文字的内容文字的内容
+                                           文字的内容文字的内容文字的内容
+                                            文字的内容文字的内容文字的内容
+                                             文字的内容文字的内容文字的内容
+                                              文字的内容文字的内容文字的内容
+                                        </p>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col span={8}>
+                            <div className='specilItem3 mga boxShowdow radius5 hoverBoxScale'>
+                                <div className="img">
+
+                                </div>
+                                <div className='pd20 pRealtive textCenter'>
+                                    <div className='pAbsolute colorWhite textFontSize30 sICON'>
+                                        <Icon type="caret-up" />
+                                    </div>
+                                    <p className="textFontSize16 textColor333">标题标题标题标题</p>
+                                    <p className='textFontSize14 textColor666 textLineHeight30'>
+                                        文字的内容文字的内容文字的内容
+                                         文字的内容文字的内容文字的内容
+                                          文字的内容文字的内容文字的内容
+                                           文字的内容文字的内容文字的内容
+                                            文字的内容文字的内容文字的内容
+                                             文字的内容文字的内容文字的内容
+                                              文字的内容文字的内容文字的内容
+                                        </p>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col span={8}>
+                            <div className='specilItem3 mga boxShowdow radius5 hoverBoxScale'>
+                                <div className="img">
+
+                                </div>
+                                <div className='pd20 pRealtive textCenter'>
+                                    <div className='pAbsolute colorWhite textFontSize30 sICON'>
+                                        <Icon type="caret-up" />
+                                    </div>
+                                    <p className="textFontSize16 textColor333">标题标题标题标题</p>
+                                    <p className='textFontSize14 textColor666 textLineHeight30'>
+                                        文字的内容文字的内容文字的内容
+                                         文字的内容文字的内容文字的内容
+                                          文字的内容文字的内容文字的内容
+                                           文字的内容文字的内容文字的内容
+                                            文字的内容文字的内容文字的内容
+                                             文字的内容文字的内容文字的内容
+                                              文字的内容文字的内容文字的内容
+                                        </p>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </div>
+                <div className='w1200 pdt80'>
+                    <h1 className='textFontSize32 textCenter mgb50 textColor333'>
+                        业务板块1
+                        </h1>
+                    <Row>
+                        <Col span={6}>
+                            <div className='bussinessItem box textCenter boxShowdow' >
+                                <div className='mga bussinessImg' style={{ backgroundImage: `url(${ruanwen})` }}>
+
+                                </div>
+                                <h2 className='textFontSize18'>
+                                    网络营销
+                                    </h2>
+                                <p className="textFontSize14 textLineHeight30">
+                                    新闻稿发布，4000家已验证权威网络媒体资源，覆盖全行业，全渠道，全天发稿服务。
+                                    </p>
+                            </div>
+                        </Col>
+                        <Col span={6}>
+                            <div className='bussinessItem box textCenter boxShowdow' >
+                                <div className='mga bussinessImg' style={{ backgroundImage: `url(${shangcheng})`, backgroundSize: '90px' }}>
+
+                                </div>
+                                <h2 className='textFontSize18'>
+                                    微信商城/小程序
+                                    </h2>
+                                <p className="textFontSize14 textLineHeight30">
+                                    新闻稿发布，4000家已验证权威网络媒体资源，覆盖全行业，全渠道，全天发稿服务。
+                                    </p>
+                            </div>
+
+                        </Col>
+                        <Col span={6}>
+                            <div className='bussinessItem box textCenter boxShowdow' >
+                                <div className='mga bussinessImg' style={{ backgroundImage: `url(${xianshangxianxia})`, backgroundSize: '85px' }}>
+
+                                </div>
+                                <h2 className='textFontSize18'>
+                                    线上线下指导经营
+                                    </h2>
+                                <p className="textFontSize14 textLineHeight30">
+                                    新闻稿发布，4000家已验证权威网络媒体资源，覆盖全行业，全渠道，全天发稿服务。
+                                    </p>
+                            </div>
+
+
+                        </Col>
+                        <Col span={6}>
+                            <div className='bussinessItem box textCenter boxShowdow' >
+                                <div className='mga bussinessImg' style={{ backgroundImage: `url(${dingzhi})`, backgroundSize: '90px' }}>
+
+                                </div>
+                                <h2 className='textFontSize18'>
+                                    软件定制开发
+                                    </h2>
+                                <p className="textFontSize14 textLineHeight30">
+                                    新闻稿发布，4000家已验证权威网络媒体资源，覆盖全行业，全渠道，全天发稿服务。
+                                    </p>
+                            </div>
+                        </Col>
+                    </Row>
+                </div>
+                <div className='w1200 pdt80'>
+                    <h1 className='textFontSize32 textCenter mgb50 textColor333'>
+                        业务板块
+                        </h1>
+                    <div className='product-item'>
+                        <ul className='flex-wrap'>
+                            <li className='multi-item'>
+                                <div className="mask">
+                                    <div className="img">
+                                        <img src={weixin} alt="" style={{ width: '100%' }} />
+                                    </div>
+                                    <h3>微信</h3>
+                                    <p>可在自有公众号中创建知识店铺</p>
+                                    <p>充分挖掘微信社交裂变传播势能</p>
+                                </div>
+                            </li>
+                            <li className='multi-item'>
+                                <div className="mask">
+                                    <div className="img">
+                                        <img src={weibo} alt="" style={{ width: '100%' }} />
+                                    </div>
+                                    <h3>微博</h3>
+                                    <p>可在自有公众号中创建知识店铺</p>
+                                    <p>充分挖掘微信社交裂变传播势能</p>
+                                </div>
+                            </li>
+                            <li className='multi-item'>
+                                <div className="mask">
+                                    <div className="img">
+                                        <img src={douyin} alt="" style={{ width: '100%' }} />
+                                    </div>
+                                    <h3>抖音</h3>
+                                    <p>可在自有公众号中创建知识店铺</p>
+                                    <p>充分挖掘微信社交裂变传播势能</p>
+                                </div>
+                            </li>
+                            <li className='multi-item'>
+                                <div className="mask">
+                                    <div className="img">
+                                        <img src={runwen} alt="" style={{ width: '100%' }} />
+                                    </div>
+                                    <h3>软文</h3>
+                                    <p>可在自有公众号中创建知识店铺</p>
+                                    <p>充分挖掘微信社交裂变传播势能</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div className='w1200 pdt80' >
+                    <h1 className='textFontSize32 textCenter mgb50 textColor333'>
+                        他们也在使用<span className="textColorPrimary">易聚推</span>
+                    </h1>
+                    <Row>
+                        <Col lg={{ span: 8 }} xs={{ span: 8 }}>
+                            <div className='box boxShowdow hoverBoxScale'>
+                                <div className='mask homeMask p20'>
+                                    <div className="img mgb18">
+
+                                    </div>
+                                    <p className="textCenter colorWhite">
+                                        "这个是标题" 某一个酒家
+                                    </p>
+                                    <p className='textCnter colorWhite'>
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                    </p>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col lg={{ span: 8 }} xs={{ span: 8 }}>
+                            <div className='box boxShowdow hoverBoxScale'>
+                                <div className='mask homeMask p20'>
+                                    <div className="img mgb18">
+
+                                    </div>
+                                    <p className="textCenter colorWhite">
+                                        "这个是标题" 某一个酒家
+                                    </p>
+                                    <p className='textCnter colorWhite'>
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                    </p>
+                                </div>
+
+                            </div>
+                        </Col>
+                        <Col lg={{ span: 8 }} xs={{ span: 8 }}>
+                            <div className='box boxShowdow hoverBoxScale'>
+                                <div className='mask homeMask p20'>
+                                    <div className="img mgb18">
+
+                                    </div>
+                                    <p className="textCenter colorWhite">
+                                        "这个是标题" 某一个酒家
+                                    </p>
+                                    <p className='textCnter colorWhite'>
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                    </p>
+                                </div>
+                            </div>
+                            <p className='homeUsers textFontSize16 textLeft textColor666' >
+                                双11活动大促期间，每日新增会员数超过<span className='textColorPrimary'>999</span>
+                            </p>
+                        </Col>
+                    </Row>
                 </div>
 
                 <Commanbar />

@@ -88,49 +88,6 @@ html,body{
     }
   }
 
-  .product-items{
-    width:1200px;
-    padding:80px 0 30px 0;
-    margin:0 auto;
-    .title{
-       font-size: 32px;
-       color:@titleColor;
-       margin-bottom: 60px;
-       text-align: center;
-    }
-    .product-item{
-        width:100%;
-        display:flex;
-        justify-content: space-between;
-        .image{
-          width:50%;
-          height:460px;
-          background:@linerBackground;
-        }
-        .product-info{
-          width:50%;
-          &.wcard-right{
-            padding-left:73px;
-          }
-         li{
-            margin-bottom:30px;
-            .item-title{
-             color:@titleColor;
-             font-size: 18px;
-             line-height: 30px;
-          }
-          .item-sub{
-             color:@titleColor;
-             font-size: 16px;
-             line-height: 30px;
-          }
-          
-         }
-
-          
-        }
-    }
-  }
 
 .product-item{
   .flex-wrap{
@@ -277,7 +234,6 @@ html,body{
       }
   }
 }
-
 //pc端样式
 .h3{
     height: 85px;
@@ -293,14 +249,44 @@ html,body{
 .textFontSize16{
   font-size:16px;
 }
-
-
+.textFontSize18{
+  font-size:18px;
+}
+.textFontSize32{
+  font-size:32px;
+}
+.textFontSize30{
+  font-size:30px;
+}
+//字体行高度
+.textLineHeight30{
+    line-height:30px;
+}
+.textLineHeight20{
+  line-height:20px;
+}
 //字体颜色
 .textColorPrimary{
   color:@primary-color;
 }
 .textColor666{
   color:#666;
+}
+.textColor333{
+  color:#333;
+}
+.colorWhite{
+  color:#fff;
+}
+//字体居中方式
+.textLeft{
+  text-align:left;
+}
+.textCenter{
+  text-align: center;
+}
+.textRight{
+  text-align:right;
 }
 //margin样式
 .mgb18{
@@ -309,23 +295,55 @@ html,body{
 .mgb36{
   margin-bottom:36px;
 }
-
+.mgb50{
+  margin-bottom:50px;
+}
+.mgb30{
+  margin-bottom:30px;
+}
+.mga{
+  margin:0 auto;
+}
 //padding样式
 .p20{
+  padding:20px;
+}
+.pd20{
   padding:20px;
 }
 .pdb40{
   padding-bottom:40px;
 }
-
+.pdt80{
+  padding-top:80px;
+}
+.pdb30{
+  padding-bottom:30px;
+}
 .pdl60{
   padding-left:60px;
+}
+.pdl73{
+  padding-left:73px;
 }
 .pdr60{
   padding-right:60px;
 }
 .pdt120{
   padding-top: 120px;
+}
+
+// 圆角样式
+.radius5{
+  border-radius:5px;
+}
+
+//定位
+.pRealtive{
+  position: relative;
+}
+.pAbsolute{
+  position: absolute;
 }
 //渠道商banner
 .channelBanner{
@@ -346,15 +364,8 @@ html,body{
   color: #333;
   font-weight: 300;
 }
-.colorWhite{
-  color:#fff;
-}
-.textLeft{
-  text-align:left;
-}
-.textCenter{
-  text-align: center;
-}
+
+
 
 .IconLael{
   position:relative;
@@ -397,7 +408,6 @@ html,body{
     transform:scale(1.1);
   }
 }
-
 //home样式
 .homeMask{
   .img{
@@ -417,7 +427,6 @@ html,body{
     }
   }
 }
-
 .homeUsers{
   padding-top:10px;
   width:360px;
@@ -434,4 +443,54 @@ html,body{
     left:5px;
   }
   
+}
+
+//图片占位符样式
+.himage{
+  width:100%;
+  height:460px;
+  background:@linerBackground;
+}
+
+.specilItem3{
+  width:360px;
+  .img{
+    width:100%;
+    height:360px;
+    background:@linerBackground;
+  }
+  .sICON{
+    top:-29px;
+    left:50%;
+    transform:translate(-50%);
+  }
+}
+
+
+//业务板块样式
+.bussinessItem{
+    width:100%;
+    height:370px;
+    padding-top:100px;
+    transition:0.35s;
+    .bussinessImg{
+      height:120px;
+      width:120px;
+      background-size:contain;
+      background-repeat:no-repeat;
+      background-position:center;
+      transition:0.35s;
+    }
+    p{
+      opacity:0;
+    }
+    &:hover{
+      padding-top:20px;
+      .bussinessImg{
+        transform: scale(0.9);
+      }
+      p{
+        opacity:1;
+      }
+    }
 }
