@@ -2,7 +2,7 @@ import React from 'react'
 import { MediaQuery } from 'react-responsive'
 import { renderRoutes } from 'react-router-config'
 import { BrowserRouter as Router, Switch } from "react-router-dom"
-import routes from "@/router/router.js"
+import routes from "@/router/Router.js"
 function App() {
   return (
     <div className="App">
