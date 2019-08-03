@@ -49,7 +49,10 @@ const routes = [
                 name: 'Product',
                 component: Product,
                 exact: true,
-            },
+            },{
+                path: '*',
+                component: NotFound,
+            }
         ]
     },
     {

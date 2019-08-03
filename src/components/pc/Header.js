@@ -36,7 +36,7 @@ class Header extends Component {
                         </div>
                         <ul className="nav_Content_navbar">
                             <li>
-                                <NavLink to="/" activeClassName={'active'}>首页</NavLink>
+                                <NavLink to="/" exact activeClassName={'active'}>首页</NavLink>
                                 {/* <a href="" className='active'>
                                    
                                 </a> */}
@@ -79,7 +79,9 @@ class Header extends Component {
                             </li>
                         </ul>
                         <div className="nav_Content_btnGroup">
-                            <Button type="link">登录</Button>
+                            <Button type="link">
+                            <NavLink to="/login" activeClassName={'active'}>登录</NavLink>
+                            </Button>
                             <Button type="primary" shape="round">
                                 注册
                            </Button>
