@@ -6,6 +6,7 @@ import weibo from "@/assets/images/icon/weibo.png"
 import douyin from "@/assets/images/icon/douyin.png"
 import runwen from "@/assets/images/icon/runwen.png"
 import Commanbar from '@/components/pc/CommanBar';
+import { Row, Col } from "antd"
 class Home extends Component {
     constructor() {
         super()
@@ -110,7 +111,7 @@ class Home extends Component {
                                             客户帮你卖，员工帮你卖，300万商家帮你卖</h2>
                                     </li>
                                     <li className='btnInlineGroup'>
-                                        <Button type="primary"  className='bigLarge'>
+                                        <Button type="primary" className='bigLarge'>
                                             免费试用
                                          </Button>
                                         <Button type="primary" ghost type="primary" className='bigLarge'>
@@ -121,7 +122,7 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-                    </div>
+                </div>
 
                 <div className='wFull bgF7FBFF'>
                     <div className='product-items'>
@@ -164,9 +165,9 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-                    </div> 
-                    
-                    <div className='w1200'>
+                </div>
+
+                <div className='w1200'>
                     <div className='product-items'>
                         <h1 className='title'>
                             易聚推 一分钟让您拥有自己的店铺
@@ -205,11 +206,10 @@ class Home extends Component {
                                     </li>
                                 </ul>
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
-                    
                 <div className='wFull bgF7FBFF'>
                     <div className='product-items'>
                         <h1 className='title'>
@@ -255,30 +255,10 @@ class Home extends Component {
                 <div className='w1200'>
                     <div className='product-items'>
                         <h1 className='title'>
-                           为更多行业和场景提供解决方案
+                            为更多行业和场景提供解决方案
                         </h1>
                         <div className='product-item'>
-                            <ul className='flex-wrap'> 
-                                <li className='solution-item'>
-                                        <div className="img">
-
-                                        </div>
-                                    <div className='solution-info'>
-                                        <div className='sICON'>
-                                            <Icon type="caret-up" />
-                                        </div>
-                                        <p className="stitle">标题标题标题标题</p>
-                                        <p className='scontent'>
-                                            文字的内容文字的内容文字的内容
-                                             文字的内容文字的内容文字的内容
-                                              文字的内容文字的内容文字的内容
-                                               文字的内容文字的内容文字的内容
-                                                文字的内容文字的内容文字的内容
-                                                 文字的内容文字的内容文字的内容
-                                                  文字的内容文字的内容文字的内容
-                                        </p>
-                                    </div>
-                                </li>
+                            <ul className='flex-wrap'>
                                 <li className='solution-item'>
                                     <div className="img">
 
@@ -301,7 +281,27 @@ class Home extends Component {
                                 </li>
                                 <li className='solution-item'>
                                     <div className="img">
-                                       
+
+                                    </div>
+                                    <div className='solution-info'>
+                                        <div className='sICON'>
+                                            <Icon type="caret-up" />
+                                        </div>
+                                        <p className="stitle">标题标题标题标题</p>
+                                        <p className='scontent'>
+                                            文字的内容文字的内容文字的内容
+                                             文字的内容文字的内容文字的内容
+                                              文字的内容文字的内容文字的内容
+                                               文字的内容文字的内容文字的内容
+                                                文字的内容文字的内容文字的内容
+                                                 文字的内容文字的内容文字的内容
+                                                  文字的内容文字的内容文字的内容
+                                        </p>
+                                    </div>
+                                </li>
+                                <li className='solution-item'>
+                                    <div className="img">
+
                                     </div>
                                     <div className='solution-info'>
                                         <div className='sICON'>
@@ -326,19 +326,19 @@ class Home extends Component {
                 <div className='w1200'>
                     <div className='product-items'>
                         <h1 className='title'>
-                           多渠道推广  流量变现快速高效
+                            多渠道推广  流量变现快速高效
                         </h1>
                         <div className='product-item'>
                             <ul className='flex-wrap'>
                                 <li className='multi-item'>
-                                   <div className="mask">
-                                            <div className="img">
-                                                <img src={weixin} alt="" style={{width:'100%'}}/>
-                                            </div>
+                                    <div className="mask">
+                                        <div className="img">
+                                            <img src={weixin} alt="" style={{ width: '100%' }} />
+                                        </div>
                                         <h3>微信</h3>
                                         <p>可在自有公众号中创建知识店铺</p>
                                         <p>充分挖掘微信社交裂变传播势能</p>
-                                   </div>
+                                    </div>
                                 </li>
                                 <li className='multi-item'>
                                     <div className="mask">
@@ -374,7 +374,78 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
-               <Commanbar/>
+                <div className='w1200'>
+                    <div className='product-items'>
+                        <h1 className='title'>
+                            他们也在使用<span className="textColorPrimary">易聚推</span>
+                        </h1>
+                        <Row>
+                        <Col lg={{ span: 8 }} xs={{span:8}}>
+                            <div className='box boxShowdow hoverBoxScale'>
+                                <div className='mask homeMask p20'>
+                                    <div className="img mgb18">
+
+                                    </div>
+                                    <p className="textCenter colorWhite">
+                                        "这个是标题" 某一个酒家
+                                    </p>
+                                    <p className='textCnter colorWhite'>
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                    </p>
+                                </div>
+                            </div>
+                               </Col>
+                               <Col lg={{ span: 8 }} xs={{span:8}}>
+                            <div className='box boxShowdow hoverBoxScale'>
+                                <div className='mask homeMask p20'>
+                                    <div className="img mgb18">
+
+                                    </div>
+                                    <p className="textCenter colorWhite">
+                                        "这个是标题" 某一个酒家
+                                    </p>
+                                    <p className='textCnter colorWhite'>
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                    </p>
+                                </div>
+                               
+                            </div>
+                               </Col>
+                               <Col lg={{ span: 8 }} xs={{span:8}}>
+                               <div className='box boxShowdow hoverBoxScale'>
+                                <div className='mask homeMask p20'>
+                                    <div className="img mgb18">
+
+                                    </div>
+                                    <p className="textCenter colorWhite">
+                                        "这个是标题" 某一个酒家
+                                    </p>
+                                    <p className='textCnter colorWhite'>
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                        描述 描述 描述 描述 描述 描述 描述 描述 描述 描述
+                                    </p>
+                                </div>
+                            </div>
+                               <p className='homeUsers textFontSize16 textLeft textColor666' >
+                                     双11活动大促期间，每日新增会员数超过<span className='textColorPrimary'>999</span>
+                                </p>
+                               </Col>
+                        </Row>
+                    </div>
+                </div>
+
+                <Commanbar />
             </div>
         );
     }

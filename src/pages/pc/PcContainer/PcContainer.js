@@ -3,6 +3,7 @@ import Header from "@/components/pc/Header.js"
 import Footer from "@/components/pc/Footer"
 import { renderRoutes } from 'react-router-config'
 import '@/assets/less/pc/home.less'
+import { MediaQuery } from 'react-responsive'
 class PcContainer extends Component {
     constructor(props) {
         super(props)
@@ -14,14 +15,18 @@ class PcContainer extends Component {
         console.log(this.props)
         return(
             <div>
-                <Header/>
-                <div className="container">
+                <MediaQuery query="(min-device-width: 768px)">
+                     <Header/>
+                </MediaQuery>
+                <div className="container" style={{paddingTop:"70px;"}}>
                     {
                         console.log(this.props.route)
                     }
                  {renderRoutes(this.props.route.routes, { someProp: "these extra props are optional" })}
                 </div>
-                <Footer/>
+                <MediaQuery query="(min-device-width: 768px)">
+                     <Footer/>
+                </MediaQuery>
             </div>
         )
     }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Commanbar from '@/components/pc/CommanBar';
+import { Row, Col } from 'antd';
 class About extends Component {
     state = {  }
     render() { 
@@ -16,37 +17,39 @@ class About extends Component {
                </div>
                <div className='w1200 about'>
                    <h1 className='fullH1'>我们努力践行的文化</h1>
-                   <ul className="about-item-wrap">
-                        <li>
-                            <p className="tile">
-                                使命
-                            </p>
-                            <p className="info">
-                               让知识更有价值
-                            </p>
-                        </li>
-                        <li>
-                            <p className="tile">
-                                愿景
-                            </p>
-                            <p className="info">
-                                最值得信赖的技术服务商
-                            </p>
-                        </li>
-                        <li>
-                            <p className="tile">
-                            价值观
-                            </p>
-                            <p className="info">
-                            以客户为中心，向善，有担当
-                            </p>
-                        </li>
-                   </ul>
+                   <Row>
+                           <Col xs={{span:24}}  lg={{span:8}}>
+                               <p className='h3'>专业技术</p>
+                               <p>nishisusduhfu</p>
+                           </Col>
+                           <Col xs={{span:24}}  lg={{span:8}}>
+                               <p className='h3'>专业技术</p>
+                               <p>nishisusduhfu</p>
+                           </Col>
+                           <Col xs={{span:24}}  lg={{span:8}}>
+                               <p className='h3'>专业技术</p>
+                               <p>nishisusduhfu</p>
+                           </Col>
+                       </Row>
                </div>
                <div className='w1200 about'>
                    <h1 className='fullH1'>我们始终秉承的理念</h1>
-                   <ul className="about-item-wrap">
-                        <li>
+                   {/* <ul className="about-item-wrap"> */}
+                       <Row>
+                           <Col xs={{span:24}}  lg={{span:8}}>
+                               <p className='h3'>专业技术</p>
+                               <p>nishisusduhfu</p>
+                           </Col>
+                           <Col xs={{span:24}}  lg={{span:8}}>
+                               <p className='h3'>专业技术</p>
+                               <p>nishisusduhfu</p>
+                           </Col>
+                           <Col xs={{span:24}}  lg={{span:8}}>
+                               <p className='h3'>专业技术</p>
+                               <p>nishisusduhfu</p>
+                           </Col>
+                       </Row>
+                        {/* <li>
                             <p className="tile">
                             专业技术
                             </p>
@@ -76,7 +79,7 @@ class About extends Component {
                             我们把每一位客户都当做创业伙伴，期盼在未来成长的道路上一路相伴，携手前行。
                             </p>
                         </li>
-                   </ul>
+                   </ul> */}
                </div>
                
 
