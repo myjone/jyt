@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import loginBg from "@/assets/images/loginbg.jpg"
+//import loginBg from "@/assets/images/loginbg.jpg"
 import { Form, Icon, Input, Button, Checkbox, Row, Col } from 'antd';
 class Login extends Component {
     constructor(props) {
@@ -20,7 +20,7 @@ class Login extends Component {
         const { getFieldDecorator } = this.props.form;
         return (
             <div>
-                <Row className='login' style={{ backgroundImage: `url(${loginBg})` }}>
+                <Row className='login'>
                     <Col xs={12} sm={12} md={12} lg={12} xl={18}>
                         <div className="login-info">
                             <div className='textCenter colorWhite'>

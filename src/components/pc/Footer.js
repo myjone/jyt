@@ -104,7 +104,7 @@ class Footer extends Component {
     render() {
         return (
             <div className="footer">
-                <div className="footer_contain">
+                {/* <div className="footer_contain">
                     <div className="foot">
                         <h1 className="tel">18080163524</h1>
                         <p className="time">周一至周日 9：00 - 21：30</p>
@@ -139,22 +139,16 @@ class Footer extends Component {
                             )
                         })
                     }
-                </div>
+                </div> */}
                 <div className="bottom">
                     <ul className="concat-way">
-                        <li className='email'>客服支持：xiaoekf@xiaoe-tech.com</li>
-                        <li className='email'>商务合作：support@xiaoe-tech.com</li>
-                        <li className='email'>渠道合作：partner@xiaoe-tech.com</li>
-                        <li className='address'>公司地址：深圳市南山区科兴科学园A2栋1205</li>
+                        <li className='email'>客服支持：1295520785@qq.com</li>
+                        <li className='email'>商务合作：1295520785@qq.com</li>
+                        <li className='email'>渠道合作：1295520785@qq.com</li>
+                        <li className='address'>公司地址：成都市双流区西航港蓝光空城国际城7栋3单元709号</li>
                     </ul>
                     <div className='copyright'>
-                        <p className="copyright-info">Copyright © 2015-2019 深圳小鹅网络技术有限公司 All Rights Reserved. 粤ICP备15020529号 </p>
-                        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502002037">
-                <img className="webInfo-ga-icon" src="/images/common/beian.png" data-no-retina=""/>粤公网安备 44030502002037号
-            </a>
-            <a target="_blank" href="https://szcert.ebs.org.cn/56b1d5d4-ecc1-4dc9-9478-063925f9c322">
-                <img className="webInfo-ga-icon" src="/images/common/ebsIcon.png" data-no-retina="" />工商网监 电子标识
-            </a>
+                        <p className="copyright-info">Copyright © 2019-2028 成都翰飞科技有限责任公司</p>
                     </div>
                 </div>
             </div>
