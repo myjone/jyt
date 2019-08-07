@@ -1,3 +1,6 @@
+html{
+    scroll-behavior:smooth;
+  }
 .nav{
     width:100%;
     height:70px;
@@ -27,24 +30,19 @@
                 padding:0 20px;
                 font-size:@titleSize;
                 text-align:center;
-                a{
-                    display:block;
-                    width:100%;
-                    height:100%;
-                    &.active{
-                        position:relative;
-                        &::after{
-                            content: '';
-                            width:100%;
-                            height:2px;
-                            position:absolute;
-                            left:50%;
-                            transform:translateX(-50%);
-                            bottom:0;
-                        }
-                    }
+                cursor: pointer;
+                &.active{
+                    position:relative;
+                 &::after{
+                        content: '';
+                        width:100%;
+                        height:2px;
+                        position:absolute;
+                        left:50%;
+                        transform:translateX(-50%);
+                        bottom:0;
+                  }
                 }
-                
             }
         }
         &_btnGroup{
@@ -64,15 +62,42 @@
 //白色背景下的a标签的颜色
 .whiteNav{
     background:#fff;
-    a{
-        color:@titleColor;
-         &:hover{
-            color:@primary-color;
+    .nav_Content{
+        li{
+            &.active{
+                color:@primary-color;
+                
+                 &::after{
+                    background:@primary-color;
+               }
+            }
+            &:hover{
+                color:@primary-color;
+                
+             }
         }
-        &.active{
-             color:@primary-color;
-             &::after{
-                  background:@primary-color;
+    }
+   
+   
+}
+
+.BlueNav{
+    background:@primary-color;
+    color:#fff;
+    .nav_Content{
+        li{
+            &.active{
+                color:orange;
+                color:rgb(200,130,39);
+                
+                 &::after{
+                    background:orange;
+                    background:rgb(200,130,39);
+               }
+            }
+            &:hover{
+                color:orange;
+                color:rgb(200,130,39);
              }
         }
     }

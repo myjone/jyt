@@ -106,7 +106,7 @@ class Footer extends Component {
             <div className="footer">
                 <div className="footer_contain">
                     <div className="foot">
-                        <h1 className="tel">400-102-190</h1>
+                        <h1 className="tel">18080163524</h1>
                         <p className="time">周一至周日 9：00 - 21：30</p>
                         <div className="qr">
                             <div className="gzh">

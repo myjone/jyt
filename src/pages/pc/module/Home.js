@@ -11,16 +11,79 @@ import dingzhi from "@/assets/images/icon/dingzhi.png"
 import shangcheng from "@/assets/images/icon/shangcheng.png"
 import xianshangxianxia from "@/assets/images/icon/xianshangxianxia.png"
 import { Row, Col } from "antd"
+import "@/assets/less/pc/header.less"
+import "@/assets/less/pc/home.less"
+import Footer from "@/components/pc/Footer"
 class Home extends Component {
     constructor() {
         super()
         this.state = {
-            list: [1, 1, 1, 1, 1, 1]
+            list: [1, 1, 1, 1, 1, 1],
+            anchorActive: '',
+        }
+    }
+
+    componentDidMount(){
+        this.renderMap()
+    }
+    //地图展示
+    renderMap = () =>{
+        this.map=new window.BMap.Map("orderDetailMap"); //初始化地图，这个id和下面的id相对应，之所以将初始化的地图放到this对象上，是方便其他方法调用map对象
+        this.map.centerAndZoom('成都市双流区西航港蓝光空港国际城', 10);
+    }
+
+    handleScrollToAnchor = (anchorName) => {
+        if (anchorName) {
+            this.setState({
+                anchorActive: anchorName
+            })
+            let anchorElement = document.getElementById(anchorName);
+            if (anchorElement) {
+                anchorElement.scrollIntoView();
+            }
         }
     }
     render() {
         return (
             <div>
+                <div className='nav BlueNav'>
+                    <div className="nav_Content">
+                        <div className="nav_Content_logo">
+
+                        </div>
+                        <ul className="nav_Content_navbar">
+                            
+                           
+                            <li>
+                            定价
+                            </li>
+                            {/* <li>
+                                <NavLink to="/example" activeClassName={'active'}>案例</NavLink>
+                                <a href="">
+                                    案例
+                                </a>
+                            </li> */}
+                            <li>
+                            渠道合作
+                            </li>
+                            <li onClick={this.handleScrollToAnchor.bind(this, "about")} 
+                            className={
+                                this.state.anchorActive=="about"?'active':null
+                            }>
+                                关于我们
+                            </li>
+                        </ul>
+                        {/* <div className="nav_Content_btnGroup">
+                            <Button type="link">
+                                <NavLink to="/login" activeClassName={'active'}>登录</NavLink>
+                            </Button>
+                            <Button type="primary" shape="round">
+                                注册
+                           </Button>
+                        </div> */}
+                    </div>
+                </div>
+
                 <div className='banner'>
                     <Carousel autoplay effect="fade">
                         <div>
@@ -514,8 +577,36 @@ class Home extends Component {
                         </Col>
                     </Row>
                 </div>
-
+                <div className='wFull bgF7FBFF pdt80 pdb30' id='about'>
+                    <div className='w1200'>
+                        <h1 className='textFontSize32 textCenter mgb50 textColor333'>
+                            关于我们
+                        </h1>
+                        <Row>
+                            <Col lg={{ span: 12 }} xs={{ span: 12 }}>
+                                <p className='prl20 textLineHeight50 textFontSize16 textIndent'>
+                                    <span className='fontweight600'>成都翰飞科技有限责任公司（简称：韩飞科技）</span>成立于2014年；
+                                    位于成都市双流区西航港蓝光空港国际城；
+                                    韩飞科技以“创新科技、服务未来、卓越品质”为众多用户提供互联网技术服务；
+                                    高效服务、诚信为本是我们的初衷。公司由行内多年技术研发专家成立的研发小组，已累计数多年的研发经验，公司设有研发部、技术部、运营部、测试部、推广部、综合部；目前已为多家中小型创业公司创造了辉煌的业绩。 
+                                </p>
+                                {/* <p className='prl20 textLineHeight30 textFontSize16 textIndent'>
+                                    <span className='fontweight600'>网络营销（市场推广、多渠道推广）：</span>
+                                    翰飞科技能有效解决中小型企业推广痛点，后台开发有专业的营销系统，富有丰富的推广资源，包括软文、微信、微博、小红书、短视频等平台，解决客户推广难、效果差、成本高的顾虑，针对不同的用户群体，翰飞科技为你提供成本低、效率高、准确、易用的多渠道推广！
+                                </p>
+                                <p className='prl20 textLineHeight30 textFontSize16 textIndent'>
+                                    <span className='fontweight600'>软件开发（微信小程序、微商城、网站建设等）：</span>
+                                    为企业提供移动互联网一体化解决方案、由专业的技术团队自助研发，我们将定期对系统后台进行维护与更新，免费为客户提供跟踪服务！
+                                </p> */}
+                            </Col>
+                            <Col lg={{ span: 12 }} xs={{ span: 12 }}>
+                            <div id="orderDetailMap" style={{width:"100%",height:"500px"}}>最好地图自己设置高度，否则地图容易不显示出来</div>
+                            </Col>
+                        </Row>
+                    </div>
+                </div>
                 <Commanbar />
+                <Footer/>
             </div>
         );
     }
