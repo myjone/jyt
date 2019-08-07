@@ -14,11 +14,58 @@ import { Row, Col } from "antd"
 import "@/assets/less/pc/header.less"
 import "@/assets/less/pc/home.less"
 import Footer from "@/components/pc/Footer"
+import banner from "@/assets/images/banner.jpg"
+import changjing from "@/assets/images/icon/changjing.png"
+import xitongwending from "@/assets/images/icon/xitongwending.png"
+import jiaoyibianjie from "@/assets/images/icon/jiaoyibianjie.png"
+import fuwuzhuanye from "@/assets/images/icon/fuwuzhuanye.png"
+import jingzhunyingxiao from "@/assets/images/icon/jingzhunyingxiao.png"
+
 class Home extends Component {
     constructor() {
         super()
         this.state = {
-            list: [1, 1, 1, 1, 1, 1],
+            list: [{
+                src: xitongwending,
+                title:'系统稳定',
+                info:'7x24小时实时护航'
+            }, {
+                    src: fuwuzhuanye,
+                    title: '服务专业',
+                    info: '提供一对一的专业服务'
+                },{
+                    src: jiaoyibianjie,
+                    title: '交易便捷',
+                    info: '多种支场景，快捷交易'
+                },{
+                    src: changjing,
+                    title: '场景多样',
+                    info: '公众号,小程序,pc,H5 '
+                },{
+                    src: jingzhunyingxiao,
+                    title: '精准营销',
+                    info: '大数据分析,点对点营销'
+                }],
+
+            serviceList:[
+                    {
+                        src:'',
+                        title:'微商城/小程序',
+                    info:"基于目前最受欢迎的社交软件微信，助你打造功能更强大的微商城管理系统。在后台你可以轻松对会员用户、广告投放、商品展示、购物交易进行有效的多方位管理，其优点成本低、传播速度快、功能大、应用场景广等营销优势；微商城还为你提供了上百种营销玩法，助你快速提升交易流量，其中包括了广告引流、新媒体多渠道推广、朋友圈裂变、商品促销等活动方式，且微商城后台还开设有分销拓展渠道功能，让更多的人帮你卖货，如店铺员工、商品买家。你可随时登陆微商城后台查看用户画像、用户来源、交易额进行数据分析；为你打造线上线下多渠道的一体化电商服务平台。"
+                    },{
+                       src:'',
+                       title:'营销推广',
+                       info:'翰飞科技为商家提供更多成功的营销解决方案，为客户获客拉新更精准锁定新客户，下单转化增加更多订单和销量，提高客单获取更高的销售量和利润率，留存复购维护老客等方面保驾护航。翰飞科技依靠自身强大的媒体资源整合能力为用户提供线上线下全方位立体广告服务，以自媒体（微博，微信达人，公众号）达人网红推广，软文推广，抖音快播视屏，网页竞价等互联网媒体为基础搭配强大的一线传统媒体，多渠道覆盖为你推送产品商家信息，通过大数据过滤为你精准锁定潜在c端资源客户助力商家实现新的飞跃！'
+                    },{
+                        src:'',
+                      title:"运营指导",
+                      info:'翰飞科技通过对超过40个行业和场景的深度了解探索及数据收集为商家提供更多更适合的运营管理经验，从自助开店，营销工具应用，内部培训，分销渠道开辟，系统化管理，数据互通，简化运营等方面为客户提供专业解答，线上视频教学，同行社交活动，运营官特训等无微不至的体贴服务！'
+                    }
+            ],
+
+            
+
+                
             anchorActive: '',
         }
     }
@@ -44,31 +91,48 @@ class Home extends Component {
         }
     }
     render() {
+        const { serviceList }  = this.state;
+        console.log(serviceList)
         return (
             <div>
-                <div className='nav BlueNav'>
+                <div className='nav whiteNav'>
                     <div className="nav_Content">
                         <div className="nav_Content_logo">
 
                         </div>
                         <ul className="nav_Content_navbar">
-                            
-                           
-                            <li>
-                            定价
+                                <li onClick={this.handleScrollToAnchor.bind(this, "products")}
+                                    className={
+                                        this.state.anchorActive === "products" ? 'active' : null
+                                    }>
+                            产品功能
                             </li>
+                            <li onClick={this.handleScrollToAnchor.bind(this, "case")}
+                                className={
+                                    this.state.anchorActive === "case" ? 'active' : null
+                                }>
+                                案例
+                            </li>
+                            
+                                <li onClick={this.handleScrollToAnchor.bind(this, "service")}
+                                    className={
+                                        this.state.anchorActive === "service" ? 'active' : null
+                                    }>
+                                 服务
+                                
                             {/* <li>
                                 <NavLink to="/example" activeClassName={'active'}>案例</NavLink>
                                 <a href="">
                                     案例
                                 </a>
                             </li> */}
+                            </li>
                             <li>
                             渠道合作
                             </li>
                             <li onClick={this.handleScrollToAnchor.bind(this, "about")} 
                             className={
-                                this.state.anchorActive=="about"?'active':null
+                                this.state.anchorActive==="about"?'active':null
                             }>
                                 关于我们
                             </li>
@@ -86,63 +150,25 @@ class Home extends Component {
 
                 <div className='banner'>
                     <Carousel autoplay effect="fade">
-                        <div>
-                            <div className='banner_item'>
-                                <div className="banner_item_info">
-                                    <h1>易聚推</h1>
-                                    <p>专注于商城的微商城</p>
-                                    <div className="btnGroup">
-                                        <Button type="primary" style={{ width: "180px", height: "52px", marginRight: "20px" }}>
-                                            免费试用
-                                    </Button>
-                                        <Button type="primary" ghost type="primary" size='large' style={{ width: "180px", height: "52px" }}>
-                                            了解更多
-                                        </Button>
-                                    </div>
-                                </div>
-                                <div className='banner_item_image'>
-                                    <img
-                                        src="http://wechatapppro-1252524126.file.myqcloud.com/apprnDA0ZDw4581/image/e55a90f2d8669ff8b1070533086f57df.png"
-                                        alt=""
-                                        style={{ width: '100%' }}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div className='banner_item'>
-                                <div className="banner_item_info">
-                                    <h1>易聚推</h1>
-                                    <p>专注于商城的微商城</p>
-                                    <div className="btnGroup">
-                                        <Button type="primary" style={{ width: "180px", height: "52px", marginRight: "20px" }}>
-                                            免费试用
-                                    </Button>
-                                        <Button type="primary" ghost type="primary" size='large' style={{ width: "180px", height: "52px" }}>
-                                            了解更多
-                                        </Button>
-                                    </div>
-                                </div>
-                                <div className='banner_item_image'>
-                                    <img
-                                        src="http://wechatapppro-1252524126.file.myqcloud.com/apprnDA0ZDw4581/image/e55a90f2d8669ff8b1070533086f57df.png"
-                                        alt=""
-                                        style={{ width: '100%' }}
-                                    />
-                                </div>
-                            </div>
-                        </div>
+                        <Row>
+                            <Col>
+                              <img src={banner} alt="" style={{width:'100%'}}/>
+                            </Col>
+                        </Row>
+
                     </Carousel>
                 </div>
-                <div className='w1200'>
+                <div className='w1200' id='products'>
                     <ul className='advantages'>
                         {
                             this.state.list.map((item, index) => {
                                 return (
                                     <li className='advantages-item' key={index}>
-                                        <div className="image"></div>
-                                        <p className="title">系统稳定</p>
-                                        <p className='content'>7x24小时实时护航</p>
+                                        <div className="image">
+                                            <img src={item.src} style={{width:"100%"}}></img>
+                                        </div>
+                                        <p className="title">{item.title}</p>
+                                        <p className='content'>{item.info}</p>
                                     </li>
                                 )
                             })
@@ -324,78 +350,33 @@ class Home extends Component {
                         </Row>
                     </div>
                 </div>
-                <div className='w1200 pdt80'>
+                <div className='w1200 pdt80' id='service'>
                     <h1 className='textFontSize32 textCenter mgb50 textColor333'>
-                        易聚推 全行业全场景的电商解决方案
+                        易聚推能为你提供一下服务
                         </h1>
-
                     <Row>
-                        <Col span={8}>
-                            <div className='specilItem3 mga boxShowdow radius5 hoverBoxScale'>
-                                <div className="img">
-
-                                </div>
-                                <div className='pd20 pRealtive textCenter'>
-                                    <div className='pAbsolute colorWhite textFontSize30 sICON'>
-                                        <Icon type="caret-up" />
-                                    </div>
-                                    <p className="textFontSize16 textColor333">标题标题标题标题</p>
-                                    <p className='textFontSize14 textColor666 textLineHeight30'>
-                                        文字的内容文字的内容文字的内容
-                                         文字的内容文字的内容文字的内容
-                                          文字的内容文字的内容文字的内容
-                                           文字的内容文字的内容文字的内容
-                                            文字的内容文字的内容文字的内容
-                                             文字的内容文字的内容文字的内容
-                                              文字的内容文字的内容文字的内容
-                                        </p>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col span={8}>
-                            <div className='specilItem3 mga boxShowdow radius5 hoverBoxScale'>
-                                <div className="img">
-
-                                </div>
-                                <div className='pd20 pRealtive textCenter'>
-                                    <div className='pAbsolute colorWhite textFontSize30 sICON'>
-                                        <Icon type="caret-up" />
-                                    </div>
-                                    <p className="textFontSize16 textColor333">标题标题标题标题</p>
-                                    <p className='textFontSize14 textColor666 textLineHeight30'>
-                                        文字的内容文字的内容文字的内容
-                                         文字的内容文字的内容文字的内容
-                                          文字的内容文字的内容文字的内容
-                                           文字的内容文字的内容文字的内容
-                                            文字的内容文字的内容文字的内容
-                                             文字的内容文字的内容文字的内容
-                                              文字的内容文字的内容文字的内容
-                                        </p>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col span={8}>
-                            <div className='specilItem3 mga boxShowdow radius5 hoverBoxScale'>
-                                <div className="img">
-
-                                </div>
-                                <div className='pd20 pRealtive textCenter'>
-                                    <div className='pAbsolute colorWhite textFontSize30 sICON'>
-                                        <Icon type="caret-up" />
-                                    </div>
-                                    <p className="textFontSize16 textColor333">标题标题标题标题</p>
-                                    <p className='textFontSize14 textColor666 textLineHeight30'>
-                                        文字的内容文字的内容文字的内容
-                                         文字的内容文字的内容文字的内容
-                                          文字的内容文字的内容文字的内容
-                                           文字的内容文字的内容文字的内容
-                                            文字的内容文字的内容文字的内容
-                                             文字的内容文字的内容文字的内容
-                                              文字的内容文字的内容文字的内容
-                                        </p>
-                                </div>
-                            </div>
-                        </Col>
+                        {
+                            serviceList.map((item,index)=>{
+                                return (
+                                    <Col span={8} key={index}>
+                                        <div className='specilItem3 mga boxShowdow radius5 hoverBoxScale'>
+                                            <div className="img">
+                                            </div>
+                                            <div className='pd20 pRealtive textCenter'>
+                                                <div className='pAbsolute colorWhite textFontSize30 sICON'>
+                                                    <Icon type="caret-up" />
+                                                </div>
+                                                <p className="textFontSize16 textColor333">{item.title}</p>
+                                                <p className='textFontSize14 textColor666 textLineHeight30'>
+                                                   {item.info}
+                                              </p>
+                                            </div>
+                                        </div>
+                                    </Col>
+                                )
+                            })
+                        }
+                        
                     </Row>
                 </div>
                 <div className='w1200 pdt80'>
@@ -509,7 +490,7 @@ class Home extends Component {
                         </ul>
                     </div>
                 </div>
-                <div className='w1200 pdt80' >
+                <div className='w1200 pdt80 mgb30' id='case'>
                     <h1 className='textFontSize32 textCenter mgb50 textColor333'>
                         他们也在使用<span className="textColorPrimary">易聚推</span>
                     </h1>

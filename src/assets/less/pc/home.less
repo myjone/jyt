@@ -3,7 +3,6 @@ html,body{
 }
 .banner{
     width:100%;
-    height:540px;
     //background:@linerBackground;
     &_item{
       width:1200px;
@@ -251,6 +250,9 @@ html,body{
 .textFontSize30{
   font-size:30px;
 }
+.textFontSize48{
+  font-size:48px;
+}
 //字体加粗
 .fontweight600{
   font-weight:600;
@@ -293,6 +295,9 @@ html,body{
   text-indent:2em;
 }
 //margin样式
+.mgt30{
+  margin-top:30px;
+}
 .mgb18{
   margin-bottom:18px;
 }
@@ -343,6 +348,9 @@ html,body{
 // 圆角样式
 .radius5{
   border-radius:5px;
+}
+.radius10{
+  border-radius:10px;
 }
 
 //定位
@@ -453,7 +461,6 @@ html,body{
 .himage{
   width:100%;
   height:460px;
-  background:@linerBackground;
 }
 
 .specilItem3{
@@ -497,4 +504,44 @@ html,body{
         opacity:1;
       }
     }
+}
+
+//代理商申请加盟表
+.joinCrad{
+      width:500px;
+      margin:0 auto;
+      height:800px;
+}
+
+//登录界面样式
+.login{
+  widows: 100% !important;
+  height:100vh !important;
+  position: relative;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  overflow: hidden;
+ &-info{
+   width:100%;
+   height:100vh;
+   background:rgba(0,0,0,0.6);
+   display:flex;
+   justify-content: center;
+   align-items:center;
+ }
+ &-box{
+   width:100%;
+   height:100vh;
+   background:#fff;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   &-card{
+     width:400px;
+     .login-form-button{
+       width:100%;
+     }
+   }
+ }
 }

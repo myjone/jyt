@@ -4,14 +4,16 @@ import Example from "@/pages/pc/module/Example"
 import Price from "@/pages/pc/module/Price"
 import About from "@/pages/pc/module/About"
 import Home from "@/pages/pc/module/Home"
-import Login from "@/pages/pc/Login"
+import Login from "@/pages/pc/module/Login"
 import NotFound from "@/pages/pc/error/NotFound"
 import Product from "@/pages/pc/module/Product"
+import Join from "@/pages/pc/module/Join"
 const routes = [
     {
         path:'/',
         name: 'Home',
         component: Home,
+        exact: true,
         // routes: [
         //     {
         //         path: "/",
@@ -50,6 +52,14 @@ const routes = [
         //         component: NotFound,
         //     }
         // ]
+    },{
+        path: '/join',
+        name: 'Join',
+        component: Join,
+    },{
+        path: '/login',
+        name: 'Login',
+        component: Login,
     },
     {
         path: '*',

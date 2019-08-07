@@ -11,22 +11,6 @@ class Header extends Component {
     }
 
     render() {
-        const menu = (
-            <Menu>
-                {
-                    this.state.list.map((value, key) => {
-                        return (
-                            <Menu.Item key={key}>
-                                <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
-                                    {value}
-                                </a>
-                            </Menu.Item>
-                        )
-                    })
-                }
-
-            </Menu>
-        )
         return (
             <div>
                 <div className='nav whiteNav'>
@@ -35,26 +19,17 @@ class Header extends Component {
 
                         </div>
                         <ul className="nav_Content_navbar">
-                            <li>
-                                <NavLink to="/" exact activeClassName={'active'}>首页</NavLink>
-                                {/* <a href="" className='active'>
-                                   
-                                </a> */}
+                            <li onClick={this.handleScrollToAnchor.bind(this, "products")}
+                                className={
+                                    this.state.anchorActive === "products" ? 'active' : null
+                                }>
+                                产品功能
                             </li>
-                            {/* <li>
-                                <Dropdown overlay={menu} overlayClassName='navOverlay'>
-                                    <a href="">
-                                        关于我们 <Icon type="down" style={{ fontSize: '12px' }} />
-                                    </a>
-                                </Dropdown>
-                                <NavLink to="/product" activeClassName={'active'}>产品介绍</NavLink>
-
-                            </li> */}
-                            <li>
-                                <NavLink to="/price" activeClassName={'active'}>定价</NavLink>
-                                {/* <a href="">
-                                    定价
-                                </a> */}
+                            <li onClick={this.handleScrollToAnchor.bind(this, "case")}
+                                className={
+                                    this.state.anchorActive === "case" ? 'active' : null
+                                }>
+                                案例
                             </li>
                             {/* <li>
                                 <NavLink to="/example" activeClassName={'active'}>案例</NavLink>
@@ -63,29 +38,23 @@ class Header extends Component {
                                 </a>
                             </li> */}
                             <li>
-                                <NavLink to="/channel" activeClassName={'active'}>渠道合作</NavLink>
-
-                                {/* <a href="">
-                                    渠道合作
-                                </a> */}
+                                渠道合作
                             </li>
-                            <li>
-                                {/* <Dropdown overlay={menu} overlayClassName='navOverlay'>
-                                    <a href="">
-                                        关于我们 <Icon type="down" style={{ fontSize: '12px' }} />
-                                    </a>
-                                </Dropdown> */}
-                                <NavLink to="/about" activeClassName={'active'}>关于我们</NavLink>
+                            <li onClick={this.handleScrollToAnchor.bind(this, "about")}
+                                className={
+                                    this.state.anchorActive === "about" ? 'active' : null
+                                }>
+                                关于我们
                             </li>
                         </ul>
-                        <div className="nav_Content_btnGroup">
+                        {/* <div className="nav_Content_btnGroup">
                             <Button type="link">
-                            <NavLink to="/login" activeClassName={'active'}>登录</NavLink>
+                                <NavLink to="/login" activeClassName={'active'}>登录</NavLink>
                             </Button>
                             <Button type="primary" shape="round">
                                 注册
                            </Button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
