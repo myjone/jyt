@@ -19,6 +19,8 @@ import tangdaxiao from "@/assets/images/tangdaxiao.jpeg"
 import tianshengguiyiner from "@/assets/images/tianshengguiyiner.jpeg"
 import chizhiliang from "@/assets/images/chizhiliang.jpeg"
 import leyixiang from "@/assets/images/leyixiang.jpeg"
+import weixinsahngcheng from "@/assets/images/weixinsahngcheng.jpeg"
+import { hidden } from "ansi-colors";
 const { Link } = Anchor;
 class Home extends Component {
     constructor() {
@@ -115,7 +117,7 @@ class Home extends Component {
                 <div className='nav whiteNav'>
                     <div className="nav_Content">
                         <div className="nav_Content_logo">
-                            <img src={Logo} style={{ width: '50px' }} className='logo'></img>
+                            <img src={Logo} style={{ width: '50px' }} alt='聚易推' className='logo'></img>
                             聚易推
                         </div>
                         <ul className="nav_Content_navbar">
@@ -139,10 +141,10 @@ class Home extends Component {
                             </Anchor>
                         </ul>
                         <div className="nav_Content_btnGroup">
-                            <Button type="link">
+                            <Button type="link" className='header-link'>
                                 <a href='http://www.juyitui.com/jytuser/login'>登录</a>
                             </Button>
-                            <Button type="primary" shape="round">
+                            <Button type="primary" shape="round" className='header-primary'>
                                 <a href='http://www.juyitui.com/jytuser/register'>注册</a>
                             </Button>
                         </div>
@@ -152,24 +154,25 @@ class Home extends Component {
                 <div className='banner' id='banner'>
                     <Carousel autoplay effect="fade">
                         <Row>
-                            <Col>
-                                <img src={banner} alt="" style={{ width: '100%' }} />
+                            <Col style={{overflow:hidden}}>
+                                <img src={banner} alt="" style={{ width: '100%' }}  className='animationScale'/>
                             </Col>
                         </Row>
-
                     </Carousel>
                 </div>
-                <div className='w1200 pdt80' id='products'>
+
+                <div className='wFull boxshowTb'>
+                <div className='w1200 '>
                     <ul className='advantages'>
                         {
                             this.state.list.map((item, index) => {
                                 return (
-                                    <li className='advantages-item' key={index}>
+                                    <li  key={index}>
                                         <div className="image">
-                                            <img src={item.src} style={{ width: "100%" }}></img>
+                                            <img src={item.src} style={{ width: "100%" }} alt='聚易推'></img>
                                         </div>
-                                        <p className="title">{item.title}</p>
-                                        <p className='content'>{item.info}</p>
+                                        <h2 className="textFontSize16 textCenter mgt15">{item.title}</h2>
+                                        <p className='textFontSize14 textColor808 textCenter mgt15' >{item.info}</p>
                                     </li>
                                 )
                             })
@@ -177,38 +180,53 @@ class Home extends Component {
 
                     </ul>
                 </div>
-                <div className='w1200 pdt80 pdb30'>
-                    <h1 className='textFontSize32 textCenter mgb50'>
-                        市场营销资源
-                        </h1>
+                </div>
+                <div className='w1200 pdt80 pdb30' id='products'>
                     <Row>
                         <Col lg={{ span: 12 }} xs={{ span: 12 }}>
-                            <div className="himage">
-                                <img src={shichangyingxiao} alt="市场营销资源"/>
+                            <div className="himage overfowHidden" >
+                                <img src={shichangyingxiao} alt="市场营销资源" className='animationScale'/>
                             </div>
                         </Col>
-                        <Col lg={{ span: 12 }} xs={{ span: 12 }}>
-                            <p className='pdl73 textFontSize16 textLineHeight50'>
-                                    富有多样化的营销工具供你选择，推广您的产品已不再困扰。
+                        <Col lg={{ span: 12 }} xs={{ span: 12 }} className='pdl73'>
+                           <h1 className='textFontSize28 textLeft mgb20'>
+                                 市场营销资源
+                           </h1>
+                            <p className=' textFontSize16 textLineHeight50 mgb20'>
+                                 富有多样化的营销工具供你选择，推广您的产品已不再困扰。
                             </p>
+                            <div className='btnGroup' >
+                            <Button type="primary" shape="round">
+                                <a href='http://www.juyitui.com/jytuser/register'>立即体验</a>
+                            </Button>
+                            </div>
                         </Col>
                     </Row>
                 </div>
 
                 <div className='wFull bgF7FBFF pdt80 pdb30'>
                     <div className='w1200'>
-                        <h1 className='textFontSize32 textCenter mgb50 textColor333'>
-                            微商城小程序
-                        </h1>
                         <Row>
-                            <Col lg={{ span: 12 }} xs={{ span: 12 }}>
-                            <p className='textFontSize16 textLineHeight50 pdr73'>
+                            <Col lg={{ span: 12 }} xs={{ span: 12 }} className='pdr73'>
+                            <h1 className='textFontSize28 textLeft mgb20'>
+                            微商城/小程序
+                           </h1>
+                           <p className=' textFontSize16 textLineHeight50 mgb20'>
                                 有效解决零基础上手难的门槛，微商城内置丰富的营销工具让你轻松卖货，经典的分销玩法，让你的成交额快速提升。
                             </p>
+                            <div className='btnGroup' >
+                            <Button type="primary" shape="round">
+                                <a href='http://www.juyitui.com/jytuser/register'>立即体验</a>
+                            </Button>
+                            </div>
                             </Col>
-                            <Col lg={{ span: 12 }} xs={{ span: 12 }}>
+                            <Col lg={{ span: 12 }} xs={{ span: 12 }} overfowHidden>
                                 <div className="himage">
-
+                                        <img src={weixinsahngcheng} 
+                                            alt="微商城/小程序" 
+                                            className='animationScale'
+                                            style={{width:'100%',height:'460px'}}
+                                            ></img>
                                 </div>
                             </Col>
                         </Row>
@@ -216,19 +234,24 @@ class Home extends Component {
                 </div>
 
                 <div className='w1200 pdt80 pdb30'>
-                    <h1 className='textFontSize32 textCenter mgb50'>
-                        行业运营
-                        </h1>
                     <Row>
                         <Col lg={{ span: 12 }} xs={{ span: 12 }}>
-                            <div className="himage">
-                                <img src={pyunyingzhidao}></img>
+                            <div className="himage overfowHidden">
+                                <img src={pyunyingzhidao} className='animationScale' alt='聚易推'></img>
                             </div>
                         </Col>
                         <Col lg={{ span: 12 }} xs={{ span: 12 }}>
-                            <p className='pdl73 textLineHeight50 pdr73'>
+                        <h1 className='textFontSize28 textLeft mgb20'>
+                           行业运营
+                        </h1>
+                        <p className=' textFontSize16 textLineHeight50 mgb20'>
                                  韩飞科技为您提供更多的运营方案，更轻松玩转网络营销
                             </p>
+                            <div className='btnGroup' >
+                            <Button type="primary" shape="round">
+                                <a href='http://www.juyitui.com/jytuser/register'>立即体验</a>
+                            </Button>
+                            </div>
                         </Col>
                     </Row>
                 </div>
@@ -243,7 +266,7 @@ class Home extends Component {
                                     <Col span={8} key={index}>
                                         <div className='specilItem3 mga boxShowdow radius5 hoverBoxScale'>
                                             <div className="img">
-                                                <img src={item.src} style={{ width: "100%" }}></img>
+                                                <img src={item.src} style={{ width: "100%" }} alt='聚易推'></img>
                                             </div>
                                             <div className='pd20 pRealtive textCenter' style={{ height: "304px" }}>
                                                 <div className='pAbsolute colorWhite textFontSize30 sICON'>

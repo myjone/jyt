@@ -79,9 +79,6 @@ body {
       height:56px;
       margin:0 auto;
     }
-    p{
-      margin-bottom:0;
-    }
     .title{
       font-size: 22px;
       color: @titleColor;
@@ -160,6 +157,9 @@ body {
   color:#333;
 }
 //字体大小
+.textFontSize14{
+  font-size:14px;
+}
 .textFontSize16{
   font-size:16px;
 }
@@ -168,6 +168,9 @@ body {
 }
 .textFontSize20{
   font-size:20px;
+}
+.textFontSize28{
+  font-size:28px;
 }
 .textFontSize32{
   font-size:32px;
@@ -202,6 +205,9 @@ body {
 .textColor333{
   color:#333;
 }
+.textColor808{
+  color:#808695;
+}
 .colorWhite{
   color:#fff;
 }
@@ -222,6 +228,9 @@ body {
 //margin样式
 .mgt30{
   margin-top:30px;
+}
+.mgt15{
+  margin-top:15px;
 }
 .mgb18{
   margin-bottom:18px;
@@ -295,6 +304,11 @@ body {
 }
 .pAbsolute{
   position: absolute;
+}
+
+//溢出影藏
+.overfowHidden{
+  overflow: hidden;
 }
 //渠道商banner
 .channelBanner{
@@ -480,4 +494,28 @@ body {
      }
    }
  }
+}
+
+.animationScale{
+  animation-name:scaleXy;
+  animation-duration: 15s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count:infinite;
+  animation-direction:alternate
+}
+
+
+@keyframes scaleXy {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.boxshowTb{
+    box-shadow: 0 0 13px rgba(175,177,193,.15), 0 6px 20px rgba(24,29,39,.05);
+    position: relative;
+    top:-5px;
 }

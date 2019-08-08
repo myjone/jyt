@@ -9,13 +9,11 @@ module.exports = override(
     addLessLoader({
         javascriptEnabled: true,
         modifyVars: { 
-            "@primary-color": "#105CFB",
+            "@primary-color": "#2d8cf0",
             "@linerBackground":"linear-gradient(90deg,#40a9ff 0,#105cfb 100%)",
             "@placeholderColor":'#e2e2e2',
             "@titleSize":'16px',
-            "@titleColor":'#333',
-
-            
+            "@titleColor":'#333', 
         },
     }),
     addWebpackAlias({
