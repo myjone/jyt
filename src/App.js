@@ -1,5 +1,4 @@
 import React from 'react'
-import { MediaQuery } from 'react-responsive'
 import { renderRoutes } from 'react-router-config'
 import { BrowserRouter as Router, Switch } from "react-router-dom"
 import routes from "@/router/Router.js"

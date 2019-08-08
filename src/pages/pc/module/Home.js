@@ -1,16 +1,5 @@
 import React, { Component } from "react"
-import { Carousel, Button } from 'antd';
-import { Icon } from 'antd';
-// import weixin from "@/assets/images/icon/weixin.png"
-// import weibo from "@/assets/images/icon/weibo.png"
-// import douyin from "@/assets/images/icon/douyin.png"
-// import runwen from "@/assets/images/icon/runwen.png"
-// import Commanbar from '@/components/pc/CommanBar';
-// import ruanwen from "@/assets/images/icon/ruanwen.png"
-// import dingzhi from "@/assets/images/icon/dingzhi.png"
-// import shangcheng from "@/assets/images/icon/shangcheng.png"
-// import xianshangxianxia from "@/assets/images/icon/xianshangxianxia.png"
-import { Row, Col, Anchor } from "antd"
+import { Row, Col, Anchor,Carousel ,Button,Icon} from "antd"
 import "@/assets/less/pc/header.less"
 import "@/assets/less/pc/home.less"
 import Footer from "@/components/pc/Footer"
@@ -238,7 +227,7 @@ class Home extends Component {
                         </Col>
                         <Col lg={{ span: 12 }} xs={{ span: 12 }}>
                             <p className='pdl73 textLineHeight50 pdr73'>
-                                 韩飞科技为您提供更多的运营方案，更轻松玩转网络营销
+                                 韩飞科技为您提供更多的运营方案，更轻松玩转网络营销
                             </p>
                         </Col>
                     </Row>
@@ -273,117 +262,6 @@ class Home extends Component {
 
                     </Row>
                 </div>
-                {/* <div className='w1200 pdt80'>
-                    <h1 className='textFontSize32 textCenter mgb50 textColor333'>
-                        业务板块1
-                        </h1>
-                    <Row>
-                        <Col span={6}>
-                            <div className='bussinessItem box textCenter boxShowdow' >
-                                <div className='mga bussinessImg' style={{ backgroundImage: `url(${ruanwen})` }}>
-
-                                </div>
-                                <h2 className='textFontSize18'>
-                                    网络营销
-                                    </h2>
-                                <p className="textFontSize14 textLineHeight30">
-                                    新闻稿发布，4000家已验证权威网络媒体资源，覆盖全行业，全渠道，全天发稿服务。
-                                    </p>
-                            </div>
-                        </Col>
-                        <Col span={6}>
-                            <div className='bussinessItem box textCenter boxShowdow' >
-                                <div className='mga bussinessImg' style={{ backgroundImage: `url(${shangcheng})`, backgroundSize: '90px' }}>
-
-                                </div>
-                                <h2 className='textFontSize18'>
-                                    微信商城/小程序
-                                    </h2>
-                                <p className="textFontSize14 textLineHeight30">
-                                    新闻稿发布，4000家已验证权威网络媒体资源，覆盖全行业，全渠道，全天发稿服务。
-                                    </p>
-                            </div>
-
-                        </Col>
-                        <Col span={6}>
-                            <div className='bussinessItem box textCenter boxShowdow' >
-                                <div className='mga bussinessImg' style={{ backgroundImage: `url(${xianshangxianxia})`, backgroundSize: '85px' }}>
-
-                                </div>
-                                <h2 className='textFontSize18'>
-                                    线上线下指导经营
-                                    </h2>
-                                <p className="textFontSize14 textLineHeight30">
-                                    新闻稿发布，4000家已验证权威网络媒体资源，覆盖全行业，全渠道，全天发稿服务。
-                                    </p>
-                            </div>
-
-
-                        </Col>
-                        <Col span={6}>
-                            <div className='bussinessItem box textCenter boxShowdow' >
-                                <div className='mga bussinessImg' style={{ backgroundImage: `url(${dingzhi})`, backgroundSize: '90px' }}>
-
-                                </div>
-                                <h2 className='textFontSize18'>
-                                    软件定制开发
-                                    </h2>
-                                <p className="textFontSize14 textLineHeight30">
-                                    新闻稿发布，4000家已验证权威网络媒体资源，覆盖全行业，全渠道，全天发稿服务。
-                                    </p>
-                            </div>
-                        </Col>
-                    </Row>
-                </div> */}
-                {/* <div className='w1200 pdt80'>
-                    <h1 className='textFontSize32 textCenter mgb50 textColor333'>
-                        业务板块
-                        </h1>
-                    <div className='product-item'>
-                        <ul className='flex-wrap'>
-                            <li className='multi-item'>
-                                <div className="mask">
-                                    <div className="img">
-                                        <img src={weixin} alt="" style={{ width: '100%' }} />
-                                    </div>
-                                    <h3>微信</h3>
-                                    <p>可在自有公众号中创建知识店铺</p>
-                                    <p>充分挖掘微信社交裂变传播势能</p>
-                                </div>
-                            </li>
-                            <li className='multi-item'>
-                                <div className="mask">
-                                    <div className="img">
-                                        <img src={weibo} alt="" style={{ width: '100%' }} />
-                                    </div>
-                                    <h3>微博</h3>
-                                    <p>可在自有公众号中创建知识店铺</p>
-                                    <p>充分挖掘微信社交裂变传播势能</p>
-                                </div>
-                            </li>
-                            <li className='multi-item'>
-                                <div className="mask">
-                                    <div className="img">
-                                        <img src={douyin} alt="" style={{ width: '100%' }} />
-                                    </div>
-                                    <h3>抖音</h3>
-                                    <p>可在自有公众号中创建知识店铺</p>
-                                    <p>充分挖掘微信社交裂变传播势能</p>
-                                </div>
-                            </li>
-                            <li className='multi-item'>
-                                <div className="mask">
-                                    <div className="img">
-                                        <img src={runwen} alt="" style={{ width: '100%' }} />
-                                    </div>
-                                    <h3>软文</h3>
-                                    <p>可在自有公众号中创建知识店铺</p>
-                                    <p>充分挖掘微信社交裂变传播势能</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div> */}
                 <div className='w1200 pdt80 mgb30' id='case'>
                     <h1 className='textFontSize32 textCenter mgb50 textColor333'>
                         他们正在使用聚易推
@@ -449,7 +327,6 @@ class Home extends Component {
                         </Row>
                     </div>
                 </div>
-                {/* <Commanbar /> */}
                 <Footer />
             </div>
         );
@@ -457,17 +334,3 @@ class Home extends Component {
 }
 
 export default Home;
-
-{
-    /*
-        快速开店-3分钟搭建自己的电铺。
-        上百款店铺模板，一键生成自己的电铺，拖拽布局，个性化店铺装修满足您的多样化需求，一键导入商品数据，操作简单便捷。
-        H5，PC,小程序，pc 多端共享。
-
-        营销推广-解决您的获客烦恼，
-
-        分享朋友圈，
-
-
-    */
-}
